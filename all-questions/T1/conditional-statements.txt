@@ -1,0 +1,142 @@
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int a=2;
+		int b=1;
+		if ( a=b ) printf("Veci je b");
+		else printf("Veci je a");
+		return 0;
+	}
+	
++ Veci je b
+- Veci je a
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int a=1;
+		int b=2;
+		if ( a==b ) printf("Veci je b");
+		else printf("Veci je a");
+		return 0;
+	}
+	
+- Veci je b
++ Veci je a
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int a=2;
+		int b=1;
+		if ( a>b ) printf("Veci je b");
+		else printf("Veci je a");
+		return 0;
+	}
+	
++ Veci je b
+- Veci je a
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int ocena=1;
+		switch (ocena)
+		{
+			case 5:	printf("Odlican!");
+			case 4:	printf("Vrlo dobar!");
+			case 3:	printf("Dobar!");
+			case 2:	printf("Dovoljan!");
+			case 1:	printf("Nedovoljan!");
+			default: printf("Ocena mora biti izmedju 1 i 5.");
+		}
+		return 0;
+	}
+	
++ Nedovoljan!Ocena mora biti izmedju 1 i 5.
+- Nedovoljan!
+- Ocena mora biti izmedju 1 i 5.
+- Nista nece biti ispisano
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int ocena=3;
+		switch (ocena)
+		{
+			case 5:	break;printf("Odlican!");
+			case 4:	break;printf("Vrlo dobar!");
+			case 3:	break;printf("Dobar!");
+			case 2:	break;printf("Dovoljan!");
+			case 1:	break;printf("Nedovoljan!");
+			default: break;printf("Ocena mora biti izmedju 1 i 5.");
+		}
+		return 0;
+	}
+	
+- Nedovoljan!Ocena mora biti izmedju 1 i 5.
+- Nedovoljan!
+- Ocena mora biti izmedju 1 i 5.
++ Nista nece biti ispisano
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        int a = 1, b = 0;
+        if(!b)
+            printf("Jednaki! ");
+        else
+            printf("Razliciti! ");
+        printf("%d\n", b);
+		return 0;
+	}
+
+- Razliciti! 1
+- Razliciti! 0
+- Jednaki! 1
++ Jednaki! 0
+.
+
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        int a = 1, b = 0;
+        if(b=a)
+            printf("Jednaki! ");
+        else
+            printf("Razliciti! ");
+        printf("%d\n", b);
+		return 0;
+	}
+
+- Razliciti! 1
+- Razliciti! 0
++ Jednaki! 1
+- Jednaki! 0
+.
+

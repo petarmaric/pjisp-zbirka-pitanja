@@ -1,0 +1,197 @@
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='j';
+        int promenljiva_2;
+        int promenljiva_3=1;
+        printf("%c",promenljiva_1+promenljiva_3);
+		return 0;
+	}
+
+- j
++ k
+- 106
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='j';
+        int promenljiva_2;
+        int promenljiva_3=1;
+        printf("%d",promenljiva_1+promenljiva_3);
+		return 0;
+	}
+
+- j
+- k
+- 106
++ 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='j';
+        int promenljiva_2;
+        int promenljiva_3=1;
+        printf("%d",promenljiva_1+promenljiva_2);
+		return 0;
+	}
+
+- j
+- k
+- 106
+- 107
++ ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='j';
+        int promenljiva_2=-32;
+        int promenljiva_3=1;
+        printf("%c",promenljiva_1+promenljiva_2+promenljiva_3);
+		return 0;
+	}
+
+- j
+- k
+- 106
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+- J
++ K
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='j';
+        int promenljiva_2=-32;
+        int promenljiva_3=1;
+        printf("%c",promenljiva_1+promenljiva_2);
+		return 0;
+	}
+
+- j
+- k
+- 106
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
++ J
+- K
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='1';
+        int promenljiva_2;
+        int promenljiva_3=1;
+        printf("%c",promenljiva_1+promenljiva_3);
+		return 0;
+	}
+
+- 1
+- 11
++ 2
+- 49
+- b
+- 98
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='1';
+        int promenljiva_2;
+        int promenljiva_3='1';
+        printf("%c",promenljiva_1+promenljiva_3);
+		return 0;
+	}
+
+- 1
+- 11
+- 2
+- 49
++ b
+- 98
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='1';
+        int promenljiva_2;
+        int promenljiva_3='1';
+        printf("%d",promenljiva_1+promenljiva_3);
+		return 0;
+	}
+
+- 1
+- 11
+- 2
+- 49
+- b
++ 98
+- 107
+- ne mozemo da kazemo koji ce znak biti odstampan.
+.
+
+
+Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
+
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+        char promenljiva_1='1';
+        int promenljiva_2;
+        int promenljiva_3='1';
+        printf("%c",promenljiva_1+promenljiva_2);
+		return 0;
+	}
+
+- 1
+- 11
+- 2
+- 49
+- b
+- 98
+- 107
++ ne mozemo da kazemo koji ce znak biti odstampan.
+.
+

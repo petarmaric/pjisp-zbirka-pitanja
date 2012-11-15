@@ -1,0 +1,46 @@
+Listanje sadrzaja direktorijuma u terminalu se vrsi putem:
+- mkdir
+- cd
+- dir
++ ls
+.
+
+
+Promena direktorijuma u terminalu se vrsi upotrebom komande:
+- mkdir
++ cd
+- dir
+- ls
+.
+
+
+Prelazak u roditeljski direktorijum u terminalu se vrsi upotrebom komande:
+- mkdir ..
+- cd
+- cd .
++ cd ..
+- cd ~
+- cd ./
+- dir ~
+- ls .
+.
+
+
+Kompajliranje u terminalu upotrebom GNU Compiler-a se vrsi putem:
+- gcc -g -o zadatak.c zadatak
+- gcc -o zadatak.c zadatak
+- cc -g -o zadatak zadatak.c
+- cc -lm -o zadatak zadatak.c
+- gcc -o zadatak zadatak
++ gcc -o zadatak zadatak.c
+.
+
+
+Kompajliranje u terminalu upotrebom GNU Compiler-a sa upotrebom matematicke biblioteke se vrsi putem:
+- gcc -lm -o zadatak.c zadatak
+- gcc -o zadatak.c zadatak
+- cc -g -o zadatak zadatak.c
+- cc -lm -o zadatak zadatak.c
++ gcc -lm -o zadatak zadatak.c
+.
+
