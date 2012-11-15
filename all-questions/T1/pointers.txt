@@ -1,0 +1,27 @@
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	
+	#include &lt;stdio.h&gt;
+	int main()
+	{
+		int a=1;
+		int b=2;
+		if (&a==&b)
+            printf("Veci je b");
+		else
+            printf("Veci je a");
+		return 0;
+	}
+	
+- Veci je b
++ Veci je a
+- Doci ce do greske (ne mozemo porediti adrese!)
+.
+
+
+Kako se pravilno uvezuje pokazivac pi na promenljivu i?
+- pi = i;
++ pi = &i;
+- *pi = i;
+- *pi = &i;
+.
+

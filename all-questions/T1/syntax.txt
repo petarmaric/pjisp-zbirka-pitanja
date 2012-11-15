@@ -1,0 +1,7 @@
+Sta od navedenog ne moze da bude naziv promenljive u programskom jeziku C:
+- JakoDugackiNazivPromenljive
+- jako_dugacak_naziv_promenljive
++ 1brojac
+- _123456
+.
+
