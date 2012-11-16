@@ -1,0 +1,17 @@
+Kog tipa je promenljiva dat koja figurise u sledecem kodu?
+
+	if((IZLdat=fopen(dat,"w"))==NULL)
+	{
+		exit(EXIT_FAILURE);
+	}
+
+-na dodavanje
+-float
+-char
+-unsigned
+-short
+-na pisanje
+-na citanje
++string
+.
+

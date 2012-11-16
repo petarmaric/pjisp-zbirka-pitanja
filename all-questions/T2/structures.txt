@@ -1,0 +1,81 @@
+Koliko polja ima struktura:
+
+	struct osoba {
+	   char ime_i_prezime[50];
+	   char adresa[20];
+	   int godine;
+	} ;
+
+-4 polja
+-1 polje
+-71 polje
+-Ovo nije pravilno deklarisana struktura!
++3 polja
+. 
+
+
+Koliko polja ima struktura:
+
+	struct osoba {
+	   char ime_i_prezime[50];
+	   char adresa[20];
+	   int godine;
+	}
+
+-4 polja
+-1 polje
+-71 polje
++Ovo nije pravilno deklarisana struktura!
+-3 polja
+. 
+
+
+Koliko polja ima struktura:
+
+	struct osoba {
+	   char ime_i_prezime[50];
+	   char adresa[20];
+	   int godine;
+	   int jmbg;
+	} ;
+
++4 polja
+-1 polje
+-72 polje
+-Ovo nije pravilno deklarisana struktura!
+-3 polja
+.
+
+
+Koliko polja ima struktura:
+
+	struct {
+	   char ime_i_prezime[50];
+	   char adresa[20];
+	   int godine;
+	   int jmbg;
+	} ;
+
+-4 polja
+-1 polje
+-72 polje
++Ovo nije pravilno deklarisana struktura!
+-3 polja
+.
+
+
+Koliko polja ima struktura:
+
+	struct osoba {
+	   char ime_i_prezime[50];
+	   char adresa[20];
+	} ;
+
+-4 polja
+-1 polje
+-70 polja
+-Ovo nije pravilno deklarisana struktura!
+-3 polja
++2 polja
+. 
+
