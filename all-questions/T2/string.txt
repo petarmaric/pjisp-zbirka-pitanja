@@ -1,0 +1,198 @@
+Sta vraca poziv funkcije strlen u sledecem kodu:
+
+	#include &lt;stdio.h&gt;
+	#include &lt;string.h&gt;
+	int main()
+	{
+		char a[]={'1','2','3','\0','4','\0'};
+		int i;
+		i=strlen(a);
+		printf("%d\n",i);
+		return 0;
+	}
+
+-5
+-4
+-6
++3
+. 
+
+
+Sta nam vraca poziv funkcije strlen u sledecem kodu:
+
+	int main()
+	{
+	    char a[]={'1','2','3','0','4','\0'};
+	    int i;
+	    i=strlen(a);
+	    printf("%d\n",i);
+	    return 0;
+	}
+
++5
+-4
+-6
+-3
+.
+
+
+Sta vraca poziv funkcije strlen u sledecem kodu:
+
+	#include &lt;stdio.h&gt;
+	#include &lt;string.h&gt;
+	int main()
+	{
+		char a[]={'0','1','2','3','\0','4','0'};
+		int i;
+		i=strlen(a);
+		printf("%d\n",i);
+		return 0;
+	}
+
+-5
++4
+-6
+-3
+. 
+
+
+Sta vraca poziv funkcije strlen u sledecem kodu:
+
+	#include &lt;stdio.h&gt;
+	#include &lt;string.h&gt;
+	int main()
+	{
+		char a[]={'\0','1','2','3','0','4','\0'};
+		int i;
+		i=strlen(a);
+		printf("%d\n",i);
+		return 0;
+	}
+
+-5
+-4
+-6
+-3
++0
+. 
+
+
+Data je rec "0123456789", najmanji string u koji se ona moze upisati u celosti je:
++char str[11];
+-char str[10];
+-char str[9];
+.
+
+
+Data je rec "012346789", najmanji string u koji se ona moze upisati u celosti je:
+-char str[11];
++char str[10];
+-char str[9];
+.
+
+
+Data je rec "123456789", najmanji string u koji se ona moze upisati u celosti je:
+-char str[11];
++char str[10];
+-char str[9];
+.
+
+
+Data je rec "12346789", najmanji string u koji se ona moze upisati u celosti je:
+-char str[11];
+-char str[10];
++char str[9];
+.
+
+
+Da bi prikazali na ekranu string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
++Oba ponudjena
+-iskljucivo: printf("\n%s",str);
+-iskljucivo: puts(str); 
+.
+
+
+Da bi procitali sa tastature string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
+-Oba ponudjena
+-iskljucivo: scanf("%s",str);
++iskljucivo: gets(str);
+. 
+
+
+Da bi procitali sa tastature string char str[]="Primer_prvog_stringa"; u celosti to mozemo uraditi sa:
++Oba ponudjena
+-iskljucivo: scanf("%s",str);
+-iskljucivo: gets(str);
+. 
+
+
+Da bi prikazali na ekranu string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
+-Oba ponudjena
+-iskljucivo: gets(str);
++iskljucivo: puts(str); 
+.
+
+
+Da bi procitali sa tastature string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
+-Oba ponudjena
++iskljucivo: gets(str);
+-iskljucivo: puts(str); 
+.
+
+
+Koliko vidljivih (stampajucih) karaktera ima string a[]:
+
+	int main()
+	{
+		char a[]={'1','2','3','\0','4','0'};
+		int i;
+		i=strlen(a);
+		printf("%d\n",i);
+		return 0;
+	}
+
+-5
+-4
+-6
++3
+-0
+.
+
+
+Koliko vidljivih (stampajucih) karaktera ima string a[]:
+
+	int main()
+	{
+	    char a[]={'1','2','3','0','4','\0'};
+	    int i;
+	    i=strlen(a);
+	    printf("%d\n",i);
+	    return 0;
+	}
+
++5
+-4
+-6
+-3
+-0
+.
+
+
+Koliko vidljivih (stampajucih) karaktera ima string a[]:
+
+	int main()
+	{
+	    char a[]={'\0', '1','2','3','0','4','\0'};
+	    int i;
+	    i=strlen(a);
+	    printf("%d\n",i);
+	    return 0;
+	}
+
+-5
+-4
+-6
+-3
++0
+.
+
