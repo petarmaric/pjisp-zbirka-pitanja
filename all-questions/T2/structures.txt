@@ -79,3 +79,57 @@ Koliko polja ima struktura:
 +2 polja
 . 
 
+
+Koja ce biti vrednost promenljive t.y nakon izvrsavanja koda:
+
+	struct tacka {
+	   int x;
+	   int y;
+	} ;
+	
+	int main()
+	{
+		tacka t;
+		t.x = 3;
+		t.y = 5;
+		int i;
+		for(i=0; i<t.x; i++){
+			t.y += t.y;
+		}
+		printf("%d", t.y);
+		return 0;
+	}
+
+-15
+-40
+-Struktura tacka nije pravilno deklarisana!
++Promenljiva t nije pravilno deklarisana!
+. 
+
+
+Koja ce biti vrednost promenljive broj nakon izvrsavanja koda:
+
+	struct tacka {
+	   int x;
+	   int y;
+	}
+	
+	int main()
+	{
+		struct tacka t;
+		t.x = 3;
+		t.y = 5;
+		int i;
+		for(i=0; i<t.x; i++){
+			t.y += t.y;
+		}
+		printf("%d", t.y);
+		return 0;
+	}
+
+-15
+-40
++Struktura tacka nije pravilno deklarisana!
+-Promenljiva t nije pravilno deklarisana!
+. 
+
