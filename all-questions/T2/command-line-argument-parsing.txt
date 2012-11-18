@@ -62,3 +62,82 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 +2, ./program
 .
 
+Program koji sledi je pozvan iz komandne linije kroz "./program a b c d".
+Sta ce biti ispisano kao rezultat izvrsavanja?
+
+	#include <stdio.h>
+
+	int main(int brArg, char **arg){
+		char **p = arg;
+		puts(*arg);	
+		return 0;
+	}
+
+-program
+-./program a b c d
++./program
+-d
+-a
+.
+
+Program koji sledi je pozvan iz komandne linije kroz "./program a b c d".
+Sta ce biti ispisano kao rezultat izvrsavanja?
+
+	#include <stdio.h>
+
+	int main(int brArg, char **arg){
+		char **p = arg;
+		puts(*(arg+brArg-1));
+		return 0;
+	}
+
+-program
+-./program a b c d
+-d c b a ./program
++d
+-a
+.
+
+Program koji sledi je pozvan iz komandne linije kroz "./program a b".
+Sta ce biti ispisano kao rezultat izvrsavanja?
+
+	#include <stdio.h>
+
+	int main(int brArg, char **arg){
+		char **p = arg;
+		while(brArg){
+			printf("%s ",*arg);
+			brArg--;
+		}
+	return 0;
+	}*
+
+-program
+-./program a b
+-a b
++./program ./program ./program
+-./program ./program
+-program a b
+.
+
+Program koji sledi je pozvan iz komandne linije kroz "./program a b".
+Sta ce biti ispisano kao rezultat izvrsavanja?
+
+	#include <stdio.h>
+
+	int main(int brArg, char **arg){
+		char **p = arg;
+		while(brArg){
+			brArg--;
+			printf("%s ",*(arg+brArg));
+		}
+		return 0;
+	}*
+
+-program
+-./program a b
+-b a
+-./program ./program ./program
+-./program ./program
++b a ./program
+. 
