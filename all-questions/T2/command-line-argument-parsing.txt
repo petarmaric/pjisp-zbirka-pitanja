@@ -110,7 +110,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 			brArg--;
 		}
 	return 0;
-	}*
+	}
 
 -program
 -./program a b
@@ -132,7 +132,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 			printf("%s ",*(arg+brArg));
 		}
 		return 0;
-	}*
+	}
 
 -program
 -./program a b
