@@ -51,3 +51,101 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 -PeraPetlic
 .
 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+Koji je rezultat izvrsavanja sledeceg koda:
+
+	#include <stdio.h>
+
+	int main(){
+		FILE *f = fopen("test.txt","r");
+		char s[5];
+		fgets(s,3,f);
+		puts(s);
+		fclose(f);
+		return 0;
+	}
+	
+-Pera
+-Per
++Pe
+-P
+.
+
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+Koji je rezultat izvrsavanja sledeceg koda:
+
+	#include <stdio.h>
+
+	int main(){
+		FILE *f = fopen("test.txt","r");
+		char s[5];
+		fscanf(f,"%c",s);
+		printf("%c",*s);
+		fclose(f);
+		return 0;
+	}
+	
+-Pera
+-Per
+-Pe
++P
+.
+
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
+
+	#include <stdio.h>
+
+	int main(){
+		FILE *f = fopen("test.txt","w");
+		char s[10]="Pera";
+		fprintf(f,"%c",*s);
+		fclose(f);
+		return 0;
+	}
+	
+-Pera
+-PeraP
+-PeraPera
++P
+.
+
+
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
+
+	#include <stdio.h>
+
+	int main(){
+		FILE *f = fopen("test.txt","a");
+		char s[10]="Pera";
+		fprintf(f,"%c",*s);
+		fclose(f);
+		return 0;
+	}
+	
+-Pera
++PeraP
+-PeraPera
+-P
+.
+
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisan sadrzaj "1234". 
+Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
+
+	#include <stdio.h>
+
+	int main(){
+		FILE *f = fopen("test.txt","w");
+		char s[20]="5678";
+		fprintf(f,"%d",*s);
+		fclose(f);
+		return 0;
+	}
+	
+-12345
++53
+-12345678
+-123453
+.
+
