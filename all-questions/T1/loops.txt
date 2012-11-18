@@ -212,3 +212,23 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 - 7
 .
 
+
+Koja ce biti vrednost promenljive: i, nakon izvrsavanja sledece petlje:
+	/#include <stdio.h>
+	int main()
+	{
+		int a=7;
+		int i=-5;
+		do{
+			i=--a;
+		}while(a>=5);
+		printf("%d",i);
+		return 0;
+	}
+--5
++4
+-5
+-6
+-7
+.
+
