@@ -18,6 +18,17 @@ GENERATED_TEST_QUESTION_FMT = """*%d
 %s
 """
 
+OTISAK_QUESTIONS_DIR = 'questions'
+OTISAK_TEST_DIR = 'tests'
+OTISAK_TEST_FILENAME_FMT = "pjisp-%s.txt"
+OTISAK_TEST_HEADER_FMT = """\
+PJISP_%(test_id)s_G%(group_id)d 0
+"Test %(test_id)s PJiSP" "Test %(test_id)s za grupu %(group_id)d"
+//oblast pitanje +poeni -poeni izbacivanje
+"""
+OTISAK_TEST_ROW_FMT = "%(test_id)sG%(group_id)d %(question_idx)d 2 0 10\n"
+OTISAK_TEST_FOOTER = '.\n\n'
+
 
 def list_files_in_dir(path):
     """"
@@ -101,6 +112,9 @@ def parse_questions(test_id):
     )
 
 def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
+    otisak_questions_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_QUESTIONS_DIR)
+    os.makedirs(otisak_questions_dir)
+    
     num_questions_per_file = dict((f, len(q)) for f, q in all_questions.items())
     
     num_total_questions = sum(num_questions_per_file.values())
@@ -137,7 +151,7 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
         )
         
         group_filename = GENERATED_TEST_FILENAME_FMT % (test_id, group_id)
-        with open(os.path.join(GENERATED_TESTS_DIR, test_id, group_filename), 'w') as fp:
+        with open(os.path.join(otisak_questions_dir, group_filename), 'w') as fp:
             fp.write(GENERATED_TEST_HEADER_FMT % (test_id, group_id))
             for idx, (filename, question_id) in enumerate(chosen_question_ids, start=1):
                 fp.write(GENERATED_TEST_QUESTION_FMT % (
@@ -145,6 +159,21 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
                 ))
         
         logging.info("Generated the test %s for group %d", group_filename, group_id)
+
+def generate_otisak_test_file(test_id, num_groups, num_questions_per_group):
+    otisak_tests_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_TEST_DIR)
+    os.makedirs(otisak_tests_dir)
+    filename = OTISAK_TEST_FILENAME_FMT % test_id
+    with open(os.path.join(otisak_tests_dir, filename), 'w') as fp:
+        for group_id in xrange(1, num_groups+1):
+            fp.write(OTISAK_TEST_HEADER_FMT % locals())
+            
+            for question_idx in xrange(1, num_questions_per_group+1):
+                fp.write(OTISAK_TEST_ROW_FMT % locals())
+                
+            fp.write(OTISAK_TEST_FOOTER)
+    
+    logging.info('Generated the OTISAK test file')
 
 def main():
     # Setup command line option parser
@@ -202,6 +231,7 @@ def main():
     # Generate tests
     all_questions = parse_questions(test_id)
     generate_tests(all_questions, test_id, num_groups, num_questions_per_group)
+    generate_otisak_test_file(test_id, num_groups, num_questions_per_group)
     
     logging.info('DONE!')
 
