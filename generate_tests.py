@@ -112,7 +112,13 @@ def parse_questions(test_id):
     )
 
 def testmaker_postprocess(s):
-    s = s.replace('\r', '') # Strip '\r' as testmaker chokes on Windows line-feeds
+    # Strip '\r' as testmaker chokes on Windows line-feeds
+    s = s.replace('\r', '')
+    
+    # Although testmaker already escapes XML correctly, XML escape '<' and '>'
+    # yourself to compensate for a rendering bug in otisak
+    s = s.replace('<', '&lt;').replace('>', '&gt;')
+    
     return s 
 
 def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
