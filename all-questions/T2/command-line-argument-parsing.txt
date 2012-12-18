@@ -1,6 +1,6 @@
 Program koji sledi je pozvan iz komandne linije kroz "./program Pera Petlic".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main(int brArg, char *arg[]) {
 	   puts(arg[0]);
 	   return 0;
@@ -13,7 +13,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main(int brArg, char *arg[])
 	{
 		puts(arg[1]);
@@ -27,7 +27,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main(int brArg, char *arg[])
 	{
 		printf("%d, %s", brArg, arg[1]);
@@ -40,7 +40,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main(int brArg, char *arg[])
 	{
 		printf("%d, %s", brArg, arg[0]);

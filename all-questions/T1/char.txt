@@ -1,5 +1,5 @@
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='j';
@@ -16,7 +16,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='j';
@@ -33,7 +33,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='j';
@@ -50,7 +50,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='j';
@@ -69,7 +69,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='j';
@@ -88,7 +88,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='1';
@@ -108,7 +108,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='1';
@@ -128,7 +128,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='1';
@@ -148,7 +148,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         char promenljiva_1='1';

@@ -1,5 +1,5 @@
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int a=2;
@@ -13,7 +13,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int a=1;
@@ -27,7 +27,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int a=2;
@@ -41,7 +41,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int ocena=1;
@@ -63,7 +63,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int ocena=3;
@@ -85,7 +85,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a = 1, b = 0;
@@ -103,7 +103,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a = 1, b = 0;

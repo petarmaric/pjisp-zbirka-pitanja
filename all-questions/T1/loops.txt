@@ -1,5 +1,5 @@
 Koliko ce se puta izvrsiti for petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int i=0;
@@ -18,7 +18,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 .
 
 Koliko ce se puta izvrsiti for petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int i=0;
@@ -37,7 +37,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 .
 
 Koliko ce se puta izvrsiti for petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int i=0;
@@ -56,7 +56,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 .
 
 Koliko ce se puta izvrsiti for petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int i=0;
@@ -75,7 +75,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 .
 
 Koliko ce se puta izvrsiti for petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int i;
@@ -94,7 +94,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 .
 
 Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a=6;
@@ -112,7 +112,7 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 .
 
 Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a=9;
@@ -131,7 +131,7 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
 .
 
 Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a=3;
@@ -150,7 +150,7 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 .
 
 Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         int a=3;
