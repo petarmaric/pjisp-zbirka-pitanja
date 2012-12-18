@@ -1,5 +1,5 @@
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    printf("%d", sizeof(float));
@@ -16,7 +16,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    printf("%d", sizeof(int));
@@ -33,7 +33,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    int a = 5;
@@ -50,7 +50,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    int a = 5;
@@ -67,7 +67,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    int a = 5;
@@ -85,7 +85,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Sta ce biti rezultat izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 	    int a = 5;
@@ -103,7 +103,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         float avr;
@@ -119,7 +119,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         float avr;
@@ -135,7 +135,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 .
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
         float avr;

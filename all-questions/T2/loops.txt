@@ -14,7 +14,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 .
 
 Koliko ce se puta izvrsiti while petlja u kodu:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0;
@@ -118,7 +118,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 .
 
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=10;
@@ -140,7 +140,7 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 . 
 
 Dat je program: 
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0, j=2;
@@ -159,7 +159,7 @@ Program ispisuje:
 .
 
 Dat je program: 
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0, j=2;
@@ -178,7 +178,7 @@ Program ispisuje:
 .
 
 Dat je program: 
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0, j=2;
@@ -197,7 +197,7 @@ Program ispisuje:
 .
 
 Dat je program: 
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0, j=2;
@@ -216,7 +216,7 @@ Program ispisuje:
 .
 
 Dat je program: 
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=0, j=2;
@@ -235,7 +235,7 @@ Program ispisuje:
 .
 
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-	#include &lt;stdio.h&gt;
+	#include <stdio.h>
 	int main()
 	{
 		int i=10;

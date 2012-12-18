@@ -1,6 +1,6 @@
 Sta vraca poziv funkcije strlen u sledecem kodu:
-	#include &lt;stdio.h&gt;
-	#include &lt;string.h&gt;
+	#include <stdio.h>
+	#include <string.h>
 	int main()
 	{
 		char a[]={'1','2','3','\0','4','\0'};
@@ -31,8 +31,8 @@ Sta nam vraca poziv funkcije strlen u sledecem kodu:
 .
 
 Sta vraca poziv funkcije strlen u sledecem kodu:
-	#include &lt;stdio.h&gt;
-	#include &lt;string.h&gt;
+	#include <stdio.h>
+	#include <string.h>
 	int main()
 	{
 		char a[]={'0','1','2','3','\0','4','0'};
@@ -48,8 +48,8 @@ Sta vraca poziv funkcije strlen u sledecem kodu:
 . 
 
 Sta vraca poziv funkcije strlen u sledecem kodu:
-	#include &lt;stdio.h&gt;
-	#include &lt;string.h&gt;
+	#include <stdio.h>
+	#include <string.h>
 	int main()
 	{
 		char a[]={'\0','1','2','3','0','4','\0'};
