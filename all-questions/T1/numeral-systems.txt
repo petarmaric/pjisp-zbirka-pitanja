@@ -8,7 +8,6 @@ Sa koliko minimalno bita se mogu ispisati sve cifre oktalnog brojnog sistema?
 - sa 16 bita
 .
 
-
 Sa koliko minimalno bita se mogu ispisati sve cifre heksadecimalnog brojnog sistema?
 - sa jednim bitom
 - sa dva bita 
@@ -19,7 +18,6 @@ Sa koliko minimalno bita se mogu ispisati sve cifre heksadecimalnog brojnog sist
 - sa 16 bita
 .
 
-
 Sa koliko minimalno bita se moze ispisati broj od dve cifre heksadecimalnog brojnog sistema?
 - sa jednim bitom
 - sa dva bita 
@@ -29,7 +27,6 @@ Sa koliko minimalno bita se moze ispisati broj od dve cifre heksadecimalnog broj
 - sa deset bita 
 - sa 16 bita
 .
-
 
 Koja je osnova heksadecimalnog brojnog sistema?
 - 2
@@ -42,7 +39,6 @@ Koja je osnova heksadecimalnog brojnog sistema?
 - {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
 . 
 
-
 Koje su cifre heksadecimalnog brojnog sistema?
 - 2
 - 4
@@ -54,4 +50,3 @@ Koje su cifre heksadecimalnog brojnog sistema?
 - {0,1,2,3,4,5,6,7}
 + {0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F}
 .
-

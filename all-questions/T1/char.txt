@@ -1,5 +1,4 @@
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -9,7 +8,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_3);
 		return 0;
 	}
-
 - j
 + k
 - 106
@@ -17,9 +15,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -29,7 +25,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%d",promenljiva_1+promenljiva_3);
 		return 0;
 	}
-
 - j
 - k
 - 106
@@ -37,9 +32,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -49,7 +42,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%d",promenljiva_1+promenljiva_2);
 		return 0;
 	}
-
 - j
 - k
 - 106
@@ -57,9 +49,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 + ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -69,7 +59,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_2+promenljiva_3);
 		return 0;
 	}
-
 - j
 - k
 - 106
@@ -79,9 +68,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 + K
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -91,7 +78,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_2);
 		return 0;
 	}
-
 - j
 - k
 - 106
@@ -101,9 +87,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - K
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -113,7 +97,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_3);
 		return 0;
 	}
-
 - 1
 - 11
 + 2
@@ -124,9 +107,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -136,7 +117,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_3);
 		return 0;
 	}
-
 - 1
 - 11
 - 2
@@ -147,11 +127,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
-
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -161,7 +137,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%d",promenljiva_1+promenljiva_3);
 		return 0;
 	}
-
 - 1
 - 11
 - 2
@@ -172,9 +147,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - ne mozemo da kazemo koji ce znak biti odstampan.
 .
 
-
 Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -184,7 +157,6 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
         printf("%c",promenljiva_1+promenljiva_2);
 		return 0;
 	}
-
 - 1
 - 11
 - 2
@@ -194,4 +166,3 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - 107
 + ne mozemo da kazemo koji ce znak biti odstampan.
 .
-
