@@ -1,10 +1,8 @@
 Kog tipa je promenljiva dat koja figurise u sledecem kodu?
-
 	if((IZLdat=fopen(dat,"w"))==NULL)
 	{
 		exit(EXIT_FAILURE);
 	}
-
 -na dodavanje
 -float
 -char
@@ -15,10 +13,8 @@ Kog tipa je promenljiva dat koja figurise u sledecem kodu?
 +string
 .
 
-
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
-
 	int main()
 	{
 		FILE *pf = fopen("test.txt","a");
@@ -26,17 +22,14 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 		fclose(pf);
 		return 0;
 	}
-	
 -Pera
 -Petlic
 -Pera Petlic
 +PeraPetlic
 .
 
-
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
-
 	int main()
 	{
 		FILE *pf = fopen("test.txt","w");
@@ -44,7 +37,6 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 		fclose(pf);
 		return 0;
 	}
-	
 -Pera
 +Petlic
 -Pera Petlic
@@ -53,9 +45,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Koji je rezultat izvrsavanja sledeceg koda:
-
 	#include <stdio.h>
-
 	int main(){
 		FILE *f = fopen("test.txt","r");
 		char s[5];
@@ -64,7 +54,6 @@ Koji je rezultat izvrsavanja sledeceg koda:
 		fclose(f);
 		return 0;
 	}
-	
 -Pera
 -Per
 +Pe
@@ -73,9 +62,7 @@ Koji je rezultat izvrsavanja sledeceg koda:
 
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Koji je rezultat izvrsavanja sledeceg koda:
-
 	#include <stdio.h>
-
 	int main(){
 		FILE *f = fopen("test.txt","r");
 		char s[5];
@@ -84,7 +71,6 @@ Koji je rezultat izvrsavanja sledeceg koda:
 		fclose(f);
 		return 0;
 	}
-	
 -Pera
 -Per
 -Pe
@@ -93,9 +79,7 @@ Koji je rezultat izvrsavanja sledeceg koda:
 
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
-
 	#include <stdio.h>
-
 	int main(){
 		FILE *f = fopen("test.txt","w");
 		char s[10]="Pera";
@@ -103,19 +87,15 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 		fclose(f);
 		return 0;
 	}
-	
 -Pera
 -PeraP
 -PeraPera
 +P
 .
 
-
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
-
 	#include <stdio.h>
-
 	int main(){
 		FILE *f = fopen("test.txt","a");
 		char s[10]="Pera";
@@ -123,7 +103,6 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 		fclose(f);
 		return 0;
 	}
-	
 -Pera
 +PeraP
 -PeraPera
@@ -132,9 +111,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 
 U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisan sadrzaj "1234". 
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
-
 	#include <stdio.h>
-
 	int main(){
 		FILE *f = fopen("test.txt","w");
 		char s[20]="5678";
@@ -142,10 +119,8 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 		fclose(f);
 		return 0;
 	}
-	
 -12345
 +53
 -12345678
 -123453
 .
-
