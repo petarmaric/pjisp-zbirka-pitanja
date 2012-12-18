@@ -111,6 +111,10 @@ def parse_questions(test_id):
         for filename in list_files_in_dir(os.path.join(QUESTIONS_DIR, test_id))
     )
 
+def testmaker_postprocess(s):
+    s = s.replace('\r', '') # Strip '\r' as testmaker chokes on Windows line-feeds
+    return s 
+
 def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
     otisak_questions_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_QUESTIONS_DIR)
     os.makedirs(otisak_questions_dir)
@@ -151,12 +155,12 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
         )
         
         group_filename = GENERATED_TEST_FILENAME_FMT % (test_id, group_id)
-        with open(os.path.join(otisak_questions_dir, group_filename), 'w') as fp:
-            fp.write(GENERATED_TEST_HEADER_FMT % (test_id, group_id))
+        with open(os.path.join(otisak_questions_dir, group_filename), 'wb') as fp:
+            fp.write(testmaker_postprocess(GENERATED_TEST_HEADER_FMT % (test_id, group_id)))
             for idx, (filename, question_id) in enumerate(chosen_question_ids, start=1):
-                fp.write(GENERATED_TEST_QUESTION_FMT % (
+                fp.write(testmaker_postprocess(GENERATED_TEST_QUESTION_FMT % (
                     idx, all_questions[filename][question_id]
-                ))
+                )))
         
         logging.info("Generated the test %s for group %d", group_filename, group_id)
 
@@ -164,14 +168,14 @@ def generate_otisak_test_file(test_id, num_groups, num_questions_per_group):
     otisak_tests_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_TEST_DIR)
     os.makedirs(otisak_tests_dir)
     filename = OTISAK_TEST_FILENAME_FMT % test_id
-    with open(os.path.join(otisak_tests_dir, filename), 'w') as fp:
+    with open(os.path.join(otisak_tests_dir, filename), 'wb') as fp:
         for group_id in xrange(1, num_groups+1):
-            fp.write(OTISAK_TEST_HEADER_FMT % locals())
+            fp.write(testmaker_postprocess(OTISAK_TEST_HEADER_FMT % locals()))
             
             for question_idx in xrange(1, num_questions_per_group+1):
-                fp.write(OTISAK_TEST_ROW_FMT % locals())
+                fp.write(testmaker_postprocess(OTISAK_TEST_ROW_FMT % locals()))
                 
-            fp.write(OTISAK_TEST_FOOTER)
+            fp.write(testmaker_postprocess(OTISAK_TEST_FOOTER))
     
     logging.info('Generated the OTISAK test file')
 
