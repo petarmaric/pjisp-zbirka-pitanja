@@ -1,5 +1,4 @@
 Koliko ce se puta izvrsiti for petlja u kodu:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -8,7 +7,6 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-
 - 0 puta	
 - 4 puta	
 - 5 puta
@@ -19,9 +17,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 - Beskonacna petlja!
 .
 
-
 Koliko ce se puta izvrsiti for petlja u kodu:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -30,7 +26,6 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-
 + 0 puta	
 - 4 puta	
 - 5 puta
@@ -41,9 +36,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 - Beskonacna petlja!
 .
 
-
 Koliko ce se puta izvrsiti for petlja u kodu:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -52,7 +45,6 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-
 - 0 puta	
 - 4 puta	
 - 5 puta
@@ -63,9 +55,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 - Beskonacna petlja!
 .
 
-
 Koliko ce se puta izvrsiti for petlja u kodu:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -74,7 +64,6 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-
 - 0 puta	
 - 4 puta	
 - 5 puta
@@ -85,9 +74,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 + Beskonacna petlja!
 .
 
-
 Koliko ce se puta izvrsiti for petlja u kodu:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -96,7 +83,6 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-
 + 0 puta	
 - 4 puta	
 - 5 puta
@@ -107,9 +93,7 @@ Koliko ce se puta izvrsiti for petlja u kodu:
 - Beskonacna petlja!
 .
 
-
 Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -120,7 +104,6 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
         }while(a<5);
 		return 0;
 	}
- 
 - 11
 + 10
 - 9
@@ -128,9 +111,7 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 - 7
 .
 
-
 Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -142,7 +123,6 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
         printf("%d",i); 
 		return 0;
 	}
- 
 -11
 -10
 +9
@@ -150,9 +130,7 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
 -7
 .
 
-
 Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -164,7 +142,6 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
         }while(a>5||i<8);
 		return 0;
 	}
- 
 - 3
 - 2
 + 8
@@ -172,9 +149,7 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 - 7
 .
 
-
 Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -186,7 +161,6 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
         }while(a>5||i<8);
 		return 0;
 	}
- 
 - 0
 - 3
 + 1
@@ -194,9 +168,8 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
 - 7
 .
 
-
 Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
-	/#include <stdio.h>
+	#include <stdio.h>
 	int main()
 	{
 		int a=6;
@@ -212,9 +185,8 @@ Koja ce biti vrednost promenljive i nakon izvrsavanja sledece petlje:
 - 7
 .
 
-
 Koja ce biti vrednost promenljive: i, nakon izvrsavanja sledece petlje:
-	/#include <stdio.h>
+	#include <stdio.h>
 	int main()
 	{
 		int a=7;
@@ -231,4 +203,3 @@ Koja ce biti vrednost promenljive: i, nakon izvrsavanja sledece petlje:
 -6
 -7
 .
-

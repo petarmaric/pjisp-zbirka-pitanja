@@ -1,5 +1,4 @@
 Posle izvrsavanja sledeceg koda izlaz ce biti:
-	
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -11,12 +10,10 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
             printf("Veci je a");
 		return 0;
 	}
-	
 - Veci je b
 + Veci je a
 - Doci ce do greske (ne mozemo porediti adrese!)
 .
-
 
 Kako se pravilno uvezuje pokazivac pi na promenljivu i?
 - pi = i;
@@ -24,4 +21,3 @@ Kako se pravilno uvezuje pokazivac pi na promenljivu i?
 - *pi = i;
 - *pi = &i;
 .
-

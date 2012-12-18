@@ -5,14 +5,12 @@ Listanje sadrzaja direktorijuma u terminalu se vrsi putem:
 + ls
 .
 
-
 Promena direktorijuma u terminalu se vrsi upotrebom komande:
 - mkdir
 + cd
 - dir
 - ls
 .
-
 
 Prelazak u roditeljski direktorijum u terminalu se vrsi upotrebom komande:
 - mkdir ..
@@ -25,7 +23,6 @@ Prelazak u roditeljski direktorijum u terminalu se vrsi upotrebom komande:
 - ls .
 .
 
-
 Kompajliranje u terminalu upotrebom GNU Compiler-a se vrsi putem:
 - gcc -g -o zadatak.c zadatak
 - gcc -o zadatak.c zadatak
@@ -35,7 +32,6 @@ Kompajliranje u terminalu upotrebom GNU Compiler-a se vrsi putem:
 + gcc -o zadatak zadatak.c
 .
 
-
 Kompajliranje u terminalu upotrebom GNU Compiler-a sa upotrebom matematicke biblioteke se vrsi putem:
 - gcc -lm -o zadatak.c zadatak
 - gcc -o zadatak.c zadatak
@@ -43,4 +39,3 @@ Kompajliranje u terminalu upotrebom GNU Compiler-a sa upotrebom matematicke bibl
 - cc -lm -o zadatak zadatak.c
 + gcc -lm -o zadatak zadatak.c
 .
-

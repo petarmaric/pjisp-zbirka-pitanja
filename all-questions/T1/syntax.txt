@@ -4,4 +4,3 @@ Sta od navedenog ne moze da bude naziv promenljive u programskom jeziku C:
 + 1brojac
 - _123456
 .
-
