@@ -1,61 +1,50 @@
 Program koji sledi je pozvan iz komandne linije kroz "./program Pera Petlic".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include &lt;stdio.h&gt;
 	int main(int brArg, char *arg[]) {
 	   puts(arg[0]);
 	   return 0;
 	}
-
 -./program Pera Petlic
 -Pera
 -Petlic
 +Nijedno od ponudjenih
 .
 
-
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include &lt;stdio.h&gt;
 	int main(int brArg, char *arg[])
 	{
 		puts(arg[1]);
 		return 0;
 	}
-
 -./program arg1
 -./program
 -program arg1
 +arg1
 .
 
-
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include &lt;stdio.h&gt;
 	int main(int brArg, char *arg[])
 	{
 		printf("%d, %s", brArg, arg[1]);
 	}
-
 -1, arg1
 +2, arg1
 -1, ./program
 -2, ./program
 .
 
-
 Program koji sledi je pozvan iz komandne linije kroz "./program arg1".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include &lt;stdio.h&gt;
 	int main(int brArg, char *arg[])
 	{
 		printf("%d, %s", brArg, arg[0]);
 	}
-
 -1, arg1
 -2, arg1
 -1, ./program
@@ -64,15 +53,12 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program a b c d".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include <stdio.h>
-
 	int main(int brArg, char **arg){
 		char **p = arg;
 		puts(*arg);	
 		return 0;
 	}
-
 -program
 -./program a b c d
 +./program
@@ -82,15 +68,12 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program a b c d".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include <stdio.h>
-
 	int main(int brArg, char **arg){
 		char **p = arg;
 		puts(*(arg+brArg-1));
 		return 0;
 	}
-
 -program
 -./program a b c d
 -d c b a ./program
@@ -100,9 +83,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program a b".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include <stdio.h>
-
 	int main(int brArg, char **arg){
 		char **p = arg;
 		while(brArg){
@@ -111,7 +92,6 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 		}
 	return 0;
 	}
-
 -program
 -./program a b
 -a b
@@ -122,9 +102,7 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 
 Program koji sledi je pozvan iz komandne linije kroz "./program a b".
 Sta ce biti ispisano kao rezultat izvrsavanja?
-
 	#include <stdio.h>
-
 	int main(int brArg, char **arg){
 		char **p = arg;
 		while(brArg){
@@ -133,7 +111,6 @@ Sta ce biti ispisano kao rezultat izvrsavanja?
 		}
 		return 0;
 	}
-
 -program
 -./program a b
 -b a

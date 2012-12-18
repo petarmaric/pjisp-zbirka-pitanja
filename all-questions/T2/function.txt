@@ -1,5 +1,4 @@
 Koji ce biti rezultat izvrsavanja sledeceg koda:
-
 	void f(int a) { 
 		a = 3; 
 	} 
@@ -8,15 +7,12 @@ Koji ce biti rezultat izvrsavanja sledeceg koda:
 		f(a); 
 		printf("%i", a); 
 	} 
-
 +5 
 -3 
 -Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
 .
 
-
 Koji ce biti rezultat izvrsavanja sledeceg koda:
-
 	void f(int *i) {
 	   *i = 3;
 	}
@@ -26,15 +22,12 @@ Koji ce biti rezultat izvrsavanja sledeceg koda:
 	   printf("%d", a);
 	   return 0;
 	}
-
 -5 
 +3 
 -Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
 . 
 
-
 Koji ce biti rezultat izvrsavanja sledeceg koda:
-
 	void f(int *i) {
 	   i = 3;
 	}
@@ -44,15 +37,12 @@ Koji ce biti rezultat izvrsavanja sledeceg koda:
 	   printf("%i", a);
 	   return 0;
 	}
-
 -5 
 -3 
 +Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
 .
 
-
 Nakon izvršavanja sledećeg bloka koda izlaz će biti:
-
 	#include &lt;stdio.h&gt;
 	void f(int *i) {
 		int a = 1;
@@ -65,16 +55,13 @@ Nakon izvršavanja sledećeg bloka koda izlaz će biti:
 		f(&a);
 		return 0;
 	}
-
 - a = 1
 + a = 2
 - a = 5
 - a = 3
 .
 
-
 Nakon izvršavanja sledećeg bloka koda izlaz će biti:
-
 	#include &lt;stdio.h&gt;
 	void f(int *i) {
 		int a = 1;
@@ -87,16 +74,13 @@ Nakon izvršavanja sledećeg bloka koda izlaz će biti:
 		printf("a = %d", i);
 		return 0;
 	}
-
 - a = 1
 + a = 2
 - a = 5
 - a = 3
 .
 
-
 Nakon izvršavanja sledećeg bloka koda izlaz će biti:
-
 	#include &lt;stdio.h&gt;
 	int f(int *i) {
 		int b = 1;
@@ -110,13 +94,11 @@ Nakon izvršavanja sledećeg bloka koda izlaz će biti:
 		printf("a = %d", a);
 		return 0;
 	}
-
 + a = 1
 - a = 2
 - a = 5
 - a = 3
 .
-
 
 Nakon izvršavanja sledećeg bloka koda izlaz će biti:
 	#include &lt;stdio.h&gt;
@@ -138,9 +120,7 @@ Nakon izvršavanja sledećeg bloka koda izlaz će biti:
 - a = 3
 .
 
-
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-
 	#include &lt;stdio.h&gt;
 	int f(int *i, int a)
 	{
@@ -156,16 +136,13 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 		printf("%d",a);
 		return 0;
 	}
-
 -5
 +3
 -1
 -2
 .
 
-
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-
 	int f(int *i, int a)
 	{
 		a=*i;
@@ -180,17 +157,13 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 		printf("%d",i);
 		return 0;
 	}
-
-
 +5
 -3
 -1
 -2
 .
 
-
 Kako treba da izgleda deklaracija funkcije "unesiNiz", koja nema povratnu vrednost i poziva se iz sledeceg dela koda:
-		
 	int main()
 	{
 		unsigned NizTacaka[1000], n;
@@ -204,4 +177,3 @@ Kako treba da izgleda deklaracija funkcije "unesiNiz", koja nema povratnu vredno
 - void unesiNiz(unsigned, unsigned *);
 - void unesiNiz(unsigned, &unsigned);
 .
-

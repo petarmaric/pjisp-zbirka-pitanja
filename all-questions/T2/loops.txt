@@ -1,5 +1,4 @@
 Koliko ce se puta izvrsiti while petlja u kodu:
-
 	int i=0;
 	int a[10]={0, 1, 2, 3, 4, 5, 6, 8, 9, 0};
 	int *p=a;
@@ -8,16 +7,13 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		p++;
 		i++;
 	}
-
 - 1 put
 - 10 puta
 - 11 puta
 + 0 puta
 .
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-	
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -31,16 +27,14 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		}
 		return 0;
 	}
-
 -1 put
 -10 puta
 +2 puta
 -0 puta
 .
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-	/#include <stdio.h>
+	#include <stdio.h>
 	int main()
 	{
 		int i=0;
@@ -60,9 +54,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 +9 puta
 . 
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-
 	int i=0;
 	int a[10]={1,2,3,4,5,6,7,8,9,10,0};
 	int *p=a;
@@ -71,16 +63,13 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		p++;
 		i++;
 	}
-
 -9 puta
 +10 puta
 -11 puta
 -0 puta
 .
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-
 	int i=0;
 	int a[10]={1,2,3,4,5,6,7,8,9,10,0};
 	int *p=a+1;
@@ -89,16 +78,13 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		p++;
 		i++;
 	}
-
 +9 puta
 -10 puta
 -11 puta
 -0 puta
 .
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-
 	int i=0;
 	int a[10]={9,8,7,6,5,4,3,2,1,0};
 	int *p=a;
@@ -107,7 +93,6 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		p++;
 		i++;
 	}
-
 +5 puta
 -6 puta
 -9 puta
@@ -115,9 +100,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 -0 puta
 .
 
-
 Koliko ce se puta izvrsiti while petlja u kodu:
-
 	int i=0;
 	int a[10]={9,8,7,6,5,4,3,2,0};
 	int *p=a;
@@ -126,7 +109,6 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 		p++;
 		i++;
 	}
-
 +4 puta
 -5 puta
 -6 puta
@@ -135,9 +117,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 -0 puta
 .
 
-
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-	
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -151,7 +131,6 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 		printf("\n%d",i);
 		return 0;
 	}
-	
 -5
 -6
 -9
@@ -159,7 +138,6 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 -0
 +1
 . 
-
 
 Dat je program: 
 	#include &lt;stdio.h&gt;
@@ -180,9 +158,7 @@ Program ispisuje:
 -2
 .
 
-
 Dat je program: 
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -191,7 +167,6 @@ Dat je program:
 		while(a+i!=a+j) i++; j--; printf("%d %d ",a[i],a[j]);
 		return 0;
 	} 
-
 Program ispisuje: 	
 +2 1
 -2 3
@@ -202,9 +177,7 @@ Program ispisuje:
 -2 3
 .
 
-
 Dat je program: 
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -213,7 +186,6 @@ Dat je program:
 		while(a+i!=a+j) i++; j++; printf("%d %d ",a[i],a[j]);
 		return 0;
 	} 
-
 Program ispisuje: 	
 -2 1
 +2 3
@@ -224,9 +196,7 @@ Program ispisuje:
 -2 3
 .
 
-
 Dat je program: 
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -235,7 +205,6 @@ Dat je program:
 		while(a+i==a+j) i++; j++; printf("%d %d ",a[i],a[j]);
 		return 0;
 	}
-
 Program ispisuje:
 -2 1
 -2 3
@@ -246,9 +215,7 @@ Program ispisuje:
 -2 3
 .
 
-
 Dat je program: 
-
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -257,7 +224,6 @@ Dat je program:
 		while(a[i]=a[j]) i++; j++; printf("%d %d ",a[i],a[j]);
 		return 0;
 	}
-
 Program ispisuje: 
 -2 1
 -2 3
@@ -268,9 +234,7 @@ Program ispisuje:
 -2 3
 .
 
-
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
-	
 	#include &lt;stdio.h&gt;
 	int main()
 	{
@@ -284,7 +248,6 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 		printf("\n%d",i);
 		return 0;
 	}
-	
 -3
 -6
 -9
@@ -292,7 +255,6 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 -0
 +1
 .
-
 
 Kakav je izlaz nakon izvrsavanja koda:
 	#include <stdio.h>
@@ -315,7 +277,7 @@ Kakav je izlaz nakon izvrsavanja koda:
 .
 
 Koliko ce se puta izvrsiti while petlja u kodu:
-	/#include <stdio.h>
+	#include <stdio.h>
 	int main()
 	{
 		int i= -3, a= 4, p= 0;
@@ -331,4 +293,3 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 -6 puta
 +5 puta
 . 
-
