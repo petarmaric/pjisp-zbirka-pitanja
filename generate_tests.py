@@ -70,7 +70,7 @@ def prompt(text, default_value='', validate=None):
     
     return value
 
-def validate_choice(choices, coerce=None):
+def validate_choice(choices, coerce=None): #@ReservedAssignment
     def validate(x):
         if callable(coerce):
             x = coerce(x)
