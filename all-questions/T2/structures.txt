@@ -16,19 +16,6 @@ Koliko polja ima struktura:
 	   char ime_i_prezime[50];
 	   char adresa[20];
 	   int godine;
-	}
--4 polja
--1 polje
--71 polje
-+Ovo nije pravilno deklarisana struktura!
--3 polja
-. 
-
-Koliko polja ima struktura:
-	struct osoba {
-	   char ime_i_prezime[50];
-	   char adresa[20];
-	   int godine;
 	   int jmbg;
 	} ;
 +4 polja
@@ -85,12 +72,12 @@ Koja ce biti vrednost promenljive t.y nakon izvrsavanja koda:
 	}
 -15
 -40
--Struktura tacka nije pravilno deklarisana!
+-Struktura nije pravilno deklarisana!
 +Promenljiva t nije pravilno deklarisana!
 . 
 
 Koja ce biti vrednost promenljive broj nakon izvrsavanja koda:
-	struct tacka {
+	struct {
 	   int x;
 	   int y;
 	}
@@ -109,6 +96,6 @@ Koja ce biti vrednost promenljive broj nakon izvrsavanja koda:
 	}
 -15
 -40
-+Struktura tacka nije pravilno deklarisana!
++Struktura nije pravilno deklarisana!
 -Promenljiva t nije pravilno deklarisana!
 . 
