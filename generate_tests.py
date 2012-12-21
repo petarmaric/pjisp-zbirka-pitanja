@@ -1,3 +1,4 @@
+import fnmatch
 import logging
 import os
 import random
@@ -8,6 +9,8 @@ DEFAULT_NUM_GROUPS = 7
 DEFAULT_NUM_QUESTIONS_PER_GROUP = 5
 
 QUESTIONS_DIR = 'all-questions'
+INCLUDE_FILENAME_PATTERN = '*.include'
+QUESTIONS_FILENAME_PATTERN = '*.txt'
 QUESTION_END_MARKER = '.'
 
 GENERATED_TESTS_DIR = 'generated-tests'
@@ -89,6 +92,9 @@ def choose_test():
         validate=validate_choice(choices)
     )
 
+def pretty_question_filename(test_id, filename):
+    return "%s/%s" % (test_id, filename)
+
 def parse_question_file(test_id, filename):
     questions = []
     buff = []
@@ -100,15 +106,51 @@ def parse_question_file(test_id, filename):
                 if line.strip() == QUESTION_END_MARKER:
                     questions.append(''.join(buff))
                     buff = []
-                    logging.debug("Parsing %s, found question:\n%s", filename, questions[-1])
+                    logging.debug(
+                        "Parsing %s, found question:\n%s",
+                        pretty_question_filename(test_id, filename), questions[-1]
+                    )
     
-    logging.info("Parsed %s, found %d question(s)", filename, len(questions))
+    logging.info(
+        "Parsed %s, found %d question(s)",
+        pretty_question_filename(test_id, filename), len(questions)
+    )
     return questions
+
+def parse_include_file(test_id, filename):
+    q_test_id = os.path.splitext(filename)[0]
+    with open(os.path.join(QUESTIONS_DIR, test_id, filename), 'r') as fp:
+        question_filenames = [(q_test_id, q_filename) for q_filename in fp.read().split()]
+        
+        logging.info(
+            "Parsed include file %s, %d question file(s) are to be included: %s",
+            pretty_question_filename(test_id, filename),
+            len(question_filenames),
+            ', '.join(pretty_question_filename(*x) for x in question_filenames)
+        )
+        return question_filenames
+
+def find_all_question_files(test_id):
+    def find_files(filename_pattern):
+        return [
+            filename
+            for filename in list_files_in_dir(os.path.join(QUESTIONS_DIR, test_id))
+            if fnmatch.fnmatch(filename, filename_pattern)
+        ]
+    
+    # Find question filenames in `test_id` directory
+    question_filenames = [(test_id, f) for f in find_files(QUESTIONS_FILENAME_PATTERN)]
+    
+    # Extract question filenames from include files
+    for filename in find_files(INCLUDE_FILENAME_PATTERN):
+        question_filenames.extend(parse_include_file(test_id, filename))
+    
+    return question_filenames
 
 def parse_questions(test_id):
     return dict(
-        (filename, parse_question_file(test_id, filename))
-        for filename in list_files_in_dir(os.path.join(QUESTIONS_DIR, test_id))
+        ((q_test_id, q_filename), parse_question_file(q_test_id, q_filename))
+        for q_test_id, q_filename in find_all_question_files(test_id)
     )
 
 def testmaker_postprocess(s):
@@ -120,6 +162,12 @@ def testmaker_postprocess(s):
     s = s.replace('<', '&lt;').replace('>', '&gt;')
     
     return s 
+
+def pretty_question_ids(question_ids):
+    return ', '.join(sorted("%s:%d" % (
+        pretty_question_filename(test_id, filename), question_id)
+        for (test_id, filename, question_id) in question_ids)
+    )
 
 def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
     otisak_questions_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_QUESTIONS_DIR)
@@ -133,39 +181,36 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
     if num_questions_needed > num_total_questions:
         raise ValueError('Not enough questions found')
     
-    def question_ids_to_str(question_ids):
-        return ', '.join(sorted("%s:%d" % x for x in question_ids))
-    
     available_question_ids = set([
-        (filename, question_id)
-        for filename, num_questions in num_questions_per_file.items()
+        (q_test_id, filename, question_id)
+        for (q_test_id, filename), num_questions in num_questions_per_file.items()
             for question_id in range(num_questions) 
     ])
     for group_id in xrange(1, num_groups+1):
         logging.debug(
             "%d question(s) available for group %d: %s",
-            len(available_question_ids), group_id, question_ids_to_str(available_question_ids)
+            len(available_question_ids), group_id, pretty_question_ids(available_question_ids)
         )
         while True:
             # Loop until all randomly chosen questions come from different question files
             chosen_question_ids = random.sample(available_question_ids, num_questions_per_group)
-            filenames_used = set([filename for filename, _ in chosen_question_ids])
-            if len(filenames_used) == num_questions_per_group:
+            files_used = set((test_id, filename) for test_id, filename, _ in chosen_question_ids) 
+            if len(files_used) == num_questions_per_group:
                 # The chosen questions are no longer available
                 available_question_ids.difference_update(set(chosen_question_ids))
                 break
             
         logging.info(
             "Chose the following question(s) for group %d: %s",
-            group_id, question_ids_to_str(chosen_question_ids)
+            group_id, pretty_question_ids(chosen_question_ids)
         )
         
         group_filename = GENERATED_TEST_FILENAME_FMT % (test_id, group_id)
         with open(os.path.join(otisak_questions_dir, group_filename), 'wb') as fp:
             fp.write(testmaker_postprocess(GENERATED_TEST_HEADER_FMT % (test_id, group_id)))
-            for idx, (filename, question_id) in enumerate(chosen_question_ids, start=1):
+            for idx, (q_test_id, filename, question_id) in enumerate(chosen_question_ids, start=1):
                 fp.write(testmaker_postprocess(GENERATED_TEST_QUESTION_FMT % (
-                    idx, all_questions[filename][question_id]
+                    idx, all_questions[q_test_id, filename][question_id]
                 )))
         
         logging.info("Generated the test %s for group %d", group_filename, group_id)
