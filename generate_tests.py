@@ -162,7 +162,7 @@ def testmaker_postprocess(s):
     s = s.replace('<', '&lt;').replace('>', '&gt;')
     
     # XML escape '\0' to compensate for a rendering bug in otisak
-    s = s.replace(r'\0', '&#92;')
+    s = s.replace(r'\0', '&#92;0')
     return s 
 
 def pretty_question_ids(question_ids):
