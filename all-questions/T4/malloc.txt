@@ -1,0 +1,30 @@
+Potrebno je alocirati memorijski blok za sledecu strukturu:
+	typedef struct cvor_st
+	{
+		int inf;
+		struct cvor_st *sledeci;
+	} SCVOR;
+I dodeliti vrednost promenljivi:
+	SCVOR *novi;
+-novi=malloc(sizeof(SCVOR));
+-novi=malloc(sizeof(int));
+-novi=(SCVOR)malloc(sizeof(SCVOR));
++novi=(SCVOR *)malloc(sizeof(SCVOR));
+-novi=(SCVOR *)malloc(sizeof(int));
+-free(novi);
+.
+
+Potrebno je osloboditi memorijski blok koji je zauzimala sledeca struktura:
+	typedef struct cvor_st
+	{
+		int inf;
+		struct cvor_st *sledeci;
+	} SCVOR;
+	SCVOR *novi;
+-novi=malloc(sizeof(SCVOR));
+-novi=malloc(sizeof(int));
+-novi=(SCVOR)malloc(sizeof(SCVOR));
+-novi=(SCVOR *)malloc(sizeof(SCVOR));
+-novi=(SCVOR *)malloc(sizeof(int));
++free(novi);
+.

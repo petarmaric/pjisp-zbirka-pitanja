@@ -1,0 +1,19 @@
+Kog je tipa povratna vrednost funkcije:
+	void zbir(int x, int y, int *k) {
+		*k=x+y;
+	}
+-int
+-int * 
+-float
++Ova funkcija nema povratnu vrednost
+.
+
+Kog je tipa povratna vrednost funkcije:
+	int *zbir(int x, int y, int *k) {
+		*k=x+y;
+	}
+-int
++int * 
+-float
+-Ova funkcija nema povratnu vrednost
+.

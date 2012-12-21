@@ -1,0 +1,95 @@
+Koliko puta ce se ispisati "Test"?
+	char x=72; // 72=01001000
+	while(x!=0) {
+		puts("Test");
+		x>>=1;
+	}
+-1 put
+-3 puta
+-4 puta
+-5 puta
+-6 puta
++7 puta
+-8 puta
+-16 puta
+-Beskonacna petlja!
+.
+
+Koliko puta ce se ispisati "Test"?
+	char x=72; // 72=01001000
+	while(x!=0) {
+		puts("Test");
+		x>>=2;
+	}
+-1 put
+-3 puta
++4 puta
+-5 puta
+-6 puta
+-7 puta
+-8 puta
+-16 puta
+-Beskonacna petlja!
+.
+
+Koliko puta ce se ispisati "Test"?
+	char x=72; // 72=01001000
+	while(x!=0) {
+		puts("Test");
+		x<<=1;
+	}
+-1 put
+-3 puta
+-4 puta
++5 puta
+-6 puta
+-7 puta
+-8 puta
+-16 puta
+-Beskonacna petlja!
+.
+
+Koliko puta ce se ispisati "Test"?
+	char x=72; // 72=01001000
+	while(x!=0) {
+		puts("Test");
+		x<<=2;
+	}
+-1 put
++3 puta
+-4 puta
+-5 puta
+-6 puta
+-7 puta
+-8 puta
+-16 puta
+-Beskonacna petlja!
+.
+
+Koliko puta ce se ispisati "Test"?
+	char x=0x8;
+	while(x!=0) {
+		puts("Test");
+		x<<=1;
+	}
+-13 puta
+-8 puta
+-1 puta
+-16 puta
+-3 puta
++5 puta
+.
+
+Koliko puta ce se ispisati "Test"?
+	short x=0x8;
+	while(x!=0) {
+		puts("Test");
+		x<<=1;
+	}
++13 puta
+-8 puta
+-1 puta
+-16 puta
+-3 puta
+-5 puta
+.
