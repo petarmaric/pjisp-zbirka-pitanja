@@ -166,3 +166,11 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 - 107
 + ne mozemo da kazemo koji ce znak biti odstampan.
 .
+
+Koji od navedenih znakova nije podrzan u tipu char?
+- '0'
+- 'Q'
+- '#'
+- '?'
++ Svi navedeni znakovi su podrzani
+.

@@ -197,3 +197,56 @@ Nakon izvrsavanja sledeceg bloka koda vrednost promenljive x ce biti:
 - 10
 + Neodredjena vrednost
 .
+
+Koji od navedenih tipova dozvoljava najvece numericke vrednosti?
+- char
++ double
+- float
+- int
+- short
+.
+
+Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
+	#include <stdio.h>
+	int main()
+	{
+		int i, j=0, p=1, q=2;
+		printf("%d",i*j);
+		return 0;
+	}
++ 0
+- 1
+- 2
+- Nije moguce znati unapred
+- Doci ce do greske prilikom prevodjenja
+.
+
+Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
+	#include <stdio.h>
+	int main()
+	{
+		int a=5, b=8, c=2;
+		printf("%d",b%a%c);
+		return 0;
+	}
+- 0
++ 1
+- 2
+- 5
+- 8
+.
+
+Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
+	#include <stdio.h>
+	int main()
+	{
+		int i, j=0, p=1, q=2;
+		printf("%d",i);
+		return 0;
+	}
+- 0
+- 1
+- 2
++ Nije moguce znati unapred
+- Doci ce do greske prilikom prevodjenja
+.
