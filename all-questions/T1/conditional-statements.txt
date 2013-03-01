@@ -176,3 +176,21 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 - Vece!
 + Manje! Razlicito!
 .
+
+Koji ce tekst biti prikazan kao rezultat izvrsavanja sledeceg koda?
+	#include <stdio.h>
+	int main()
+	{
+		int x=-3;
+		if(x+3) 
+		printf("istina");
+		else 
+		printf("neistina");
+		return 0;
+	}
+- istina
+- istinaneistina
++ neistina
+- Nikakav tekst nece biti prikazan
+- Doci ce do greske prilikom prevodjenja
+.
