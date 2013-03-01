@@ -47,3 +47,15 @@ Kako se pravilno sa tastature ucitava ceo broj u promenljivu n?
 - scanf("d", &n);
 - scanf("%f", &n);
 .
+
+Zelimo da sa tastature procitamo vrednost duzine osam bita, to mozemo
+uraditi sa:
+- scanf("%b",promenljiva_1);
+- scanf("%c",promenljiva_2);
+- scanf("%b",promenljiva_3);
++ scanf("%c",&promenljiva_4);
+- printf("%b",promenljiva_1);
+- printf("%c",promenljiva_2);
+- printf("%b",promenljiva_3);
+- printf("%c",&promenljiva_4);
+.

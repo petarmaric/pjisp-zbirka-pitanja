@@ -124,6 +124,24 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 	#include <stdio.h>
 	int main()
 	{
+		int a = 1, b = 0;
+		if(a=b)
+			printf("Jednaki! ");
+		else
+			printf("Razliciti! ");
+		printf("%d\n", a);
+		return 0;
+	}
+-Jednaki! 1
+-Razliciti! 1
++Razliciti! 0
+-Jednaki! 0
+.
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
+	int main()
+	{
 		int a = 5;
 		int b = 3;
 		if((b>a) || (b=a))

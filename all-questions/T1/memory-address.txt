@@ -5,3 +5,12 @@ Koliko je heksadecimalnih znakova potrebno za prikaz memorijske adrese u 32-bitn
 - 32
 - 64
 .
+
+Imamo dve neinicijalizovane promenljive:
+	int brojac;
+	double pi;
+- Adresa promenljive brojac (&brojac) je veca od duzine adrese promenljive pi (&pi).
+- Adresa promenljive pi (&pi) je veca od duzine adrese promenljive brojac (&brojac).
++ Adrese su jednake duzine.
+- Duzina adrese zavisi od vrednosti promenljive koja se nalazi na toj adresi.
+.
