@@ -173,3 +173,27 @@ Da li promenljiva tipa int zauzima vise radne memorije od promenljive tipa unsig
 - Ne, unsigned int zauzima vise
 - Da, int zauzima vise
 .
+
+Nakon izvrsavanja sledeceg bloka koda vrednost promenljive x ce biti:
+	int a;
+    int b = 1;
+    int x;
+    x = a * (a%b) + 10;
+- 11
+- 0
+- 13
++ 10
+- Neodredjena vrednost
+.
+
+Nakon izvrsavanja sledeceg bloka koda vrednost promenljive x ce biti:
+	int a;
+    int b = 3;
+    int x;
+    x = a * (a%b) + 10;
+- 11
+- 0
+- 13
+- 10
++ Neodredjena vrednost
+.
