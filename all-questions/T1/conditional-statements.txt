@@ -119,3 +119,60 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 + Jednaki! 1
 - Jednaki! 0
 .
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
+	int main()
+	{
+		int a = 5;
+		int b = 3;
+		if((b>a) || (b=a))
+			printf("Manje! ");
+		else
+			printf("Vece! ");
+			printf("Razlicito! ");
+	}
+- Manje! 
+- Vece! Razlicito!
+- Razlicito!
+- Vece!
++ Manje! Razlicito!
+.
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
+	int main()
+	{
+		int a = 5;
+		int b = 3;
+		if(b>a || b==a)
+			printf("Manje! ");
+		else
+			printf("Vece! ");
+			printf("Razlicito! ");
+	}
+- Manje! 
++ Vece! Razlicito!
+- Razlicito!
+- Vece!
+- Manje! Razlicito!
+.
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
+	int main()
+	{
+		int a = 5;
+		int b = 3;
+		if(b=a)
+			printf("Manje! ");
+		else if(b<a)
+			printf("Vece! ");
+			printf("Razlicito! ");
+	}
+- Manje! 
+- Vece! Razlicito!
+- Razlicito!
+- Vece!
++ Manje! Razlicito!
+.
