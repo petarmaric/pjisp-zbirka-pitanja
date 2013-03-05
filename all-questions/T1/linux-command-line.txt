@@ -39,3 +39,21 @@ Kompajliranje u terminalu upotrebom GNU Compiler-a sa upotrebom matematicke bibl
 - cc -lm -o zadatak zadatak.c
 + gcc -lm -o zadatak zadatak.c
 .
+
+U Linux terminalu, nakon poziva komande 'gcc -o zadatak zadatak.c', dobijena izvrsna datoteka se pokrece komandom:
+- zadatak
+- /zadatak
+- a.out
+- ./a.out
+- ./zadatak.c
++ ./zadatak
+.
+
+U Linux terminalu, nakon poziva komande 'gcc zadatak.c', dobijena izvrsna datoteka se pokrece komandom:
+- zadatak
+- /zadatak
+- a.out
++ ./a.out
+- ./zadatak.c
+- ./zadatak
+.
