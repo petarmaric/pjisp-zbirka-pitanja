@@ -81,3 +81,135 @@ Odabrati ispravan SNIPPET za ispis svakog 3. clana niza:
 - i = 0; i < n; i+3
 - j = 0; j < n; j+3
 .
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int i=1;
+		int a[10]={-2,-1,0,1,2,3,4,5,8,0};
+		printf("%d", a[i]);
+				
+		return 0;
+	}
+--2
++-1
+-0
+-1
+-Ne mozemo znati koji broj ce biti ispisan
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int i=4;
+		int a[10]={-2,-1,0,1,2,3,4,5,8,0};
+		printf("%d", a[i]);
+				
+		return 0;
+	}
+--1
+-0
+-1
++2
+-3
+-Ne mozemo znati koji broj ce biti ispisan
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int i;
+		int a[10];
+		
+		for (i=0;i<10;i++){
+			a[i]=0;
+			if(i==2 || i==4)
+				a[i]=5;					
+		}
+		
+		printf("%d", a[0]+a[1]+a[2]);				
+		return 0;
+	}
+-0
+-10
++5
+-1
+-15
+-Ne mozemo znati koji broj ce biti ispisan
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int i;
+		int a[10];
+		
+		for (i=0;i<10;i++){
+			a[i]=0;
+			if(i<2)
+				a[i]=5;					
+		}
+		
+		printf("%d", a[0]+a[1]+a[2]);				
+		return 0;
+	}
+-0
++10
+-5
+-1
+-15
+-Ne mozemo znati koji broj ce biti ispisan
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int i, a[10];
+		for(i=0;i<10;i++)
+			a[i]=i+2;
+		printf("%d", a[0]+a[5]);
+		return 0;
+	}
+-0
+-2
+-5
+-7
++9
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int a[10];
+		printf("%d", a[0]);				
+		return 0;
+	}
+-0
+-1
+-10
++Ne mozemo znati koji broj ce biti ispisan (vrednost zatecena u memoriji)
+.
+
+Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
+	#include <stdio.h>
+	int main()
+	{
+		int a[5];
+		for (i=2;i<5;i++)
+			a[i]=5;				
+		
+		printf("%d", a[0]);				
+		return 0;
+	}
+-0
+-1
+-5
+-10
++Ne mozemo znati koji broj ce biti ispisan (vrednost zatecena u memoriji)
+.
