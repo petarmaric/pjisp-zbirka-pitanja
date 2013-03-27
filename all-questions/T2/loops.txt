@@ -354,3 +354,62 @@ Program ispisuje:
 -1 2
 -2 3
 .
+
+Ako se uporedi dati while ciklus
+	while(i<j)
+	{
+		i=1;
+		x--;
+		i++;
+	}
+sa datim for ciklusom
+	for(i=1;i<j;i++)
+	{
+		x--;
+	}
+moze se tvrditi
+- ova dva ciklusa su ekvivalentna
++ ova dva ciklusa nisu ekvivalentna
+- napisani for ciklus nije sintaksno ispravan
+- napisani while ciklus nije sintaksno ispravan
+.
+
+Koliko puta ce se izvrsiti printf naredba prilikom izvrsenja sledeceg programa?
+	#include <stdio.h>
+	int main()
+	{
+        int j;
+		for(j=273;j>732;j++)
+			printf("zviz");
+		return 0;
+	}
++ 0 puta
+- 1 put
+- 459 puta
+- 460 puta
+- beskonacno mnogo puta
+.
+
+Sta od navedenog ne moze da bude uslov while ciklusa ako je lower promenljiva tipa int?
+- lower <= 1
+- lower + 1
++ if(lower <= 1)
+- lower++
+- sve od gorenavedenog moze biti uslov while ciklusa
+.
+
+Sta treba da stoji umesto XXX kako bi se printf naredba izvrsila tacno 15 puta?
+	#include <stdio.h>
+	int main()
+	{
+        int j;
+		for(j=2; XXX ;j++)
+			printf("pljas");
+		return 0;
+	}
+- j > 15
+- j < 16
+- j == 16
++ j <= 16
+- j <= 17
+.

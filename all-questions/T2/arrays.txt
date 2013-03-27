@@ -213,3 +213,18 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 -10
 +Ne mozemo znati koji broj ce biti ispisan (vrednost zatecena u memoriji)
 .
+
+Kako se moze deklasirati niz celobrojnih vrednosti sa jednim clanom?
+- int niz(1);
+- int niz{1};
++ int niz[1];
+- Nije moguce deklarisati niz sa jednim clanom
+.
+
+Kako se moze uneti prvih 8 vrednosti niza realnih brojeva a?
+- for(i=0;i<8;i++) scanf("%f",a[i]);
++ for(i=0;i<8;i++) scanf("%f",&a[i]);
+- for(i=0;i<9;i++) scanf("%f",a[i]);
+- for(i=0;i<9;i++) scanf("%f",&a[i]);
+- Nijedan od prethodnih odgovara nije tacan
+.
