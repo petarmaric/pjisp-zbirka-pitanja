@@ -31,7 +31,7 @@ Koliko polja ima struktura:
 	   char adresa[20];
 	   int godine;
 	   int jmbg;
-	} ;
+	} 
 -4 polja
 -1 polje
 -72 polje
