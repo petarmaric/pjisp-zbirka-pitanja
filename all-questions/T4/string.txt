@@ -109,14 +109,14 @@ Da bi procitali sa tastature string char str[]="Primer_prvog_stringa"; u celosti
 
 Da bi prikazali na ekranu string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 -Oba ponudjena
--iskljucivo: gets(str);
-+iskljucivo: puts(str); 
+-gets(str);
++puts(str); 
 .
 
 Da bi procitali sa tastature string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 -Oba ponudjena
-+iskljucivo: gets(str);
--iskljucivo: puts(str); 
++gets(str);
+-puts(str); 
 .
 
 Koliko vidljivih (stampajucih) karaktera ima string a[]:
