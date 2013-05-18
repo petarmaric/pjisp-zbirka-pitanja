@@ -352,7 +352,6 @@ Program ispisuje:
 +Program nece terminirati (beskonacna petlja)
 -0 1
 -1 2
--2 3
 .
 
 Ako se uporedi dati while ciklus

@@ -2,6 +2,7 @@ import fnmatch
 import logging
 import os
 import random
+import re
 import shutil
 
 
@@ -12,6 +13,9 @@ QUESTIONS_DIR = 'all-questions'
 INCLUDE_FILENAME_PATTERN = '*.include'
 QUESTIONS_FILENAME_PATTERN = '*.txt'
 QUESTION_END_MARKER = '.'
+MIN_ANSWERS = 2
+MAX_ANSWERS = 10
+ANSWER_LINE = re.compile('^ *([+-])(.+)', re.MULTILINE)
 
 GENERATED_TESTS_DIR = 'generated-tests'
 GENERATED_TEST_FILENAME_FMT = "%sG%d.txt"
@@ -95,6 +99,46 @@ def choose_test():
 def pretty_question_filename(test_id, filename):
     return "%s/%s" % (test_id, filename)
 
+def parse_answers(question_text):
+    answers = [
+        (sign, ' '.join(answer.split())) # Normalize spaces in answer
+        for sign, answer in ANSWER_LINE.findall(question_text)
+    ]
+    
+    logging.debug("Parsed answers in question, found: %s", answers)
+    return answers
+
+def check_question(test_id, filename, question_text):
+    question_filename = pretty_question_filename(test_id, filename)
+    answers = parse_answers(question_text)
+    
+    if len(answers) > MAX_ANSWERS:
+        raise RuntimeError(
+            "More than %d answers found in a question from %s:\n%s" % (
+                MAX_ANSWERS, question_filename, question_text
+        ))
+    
+    if len(answers) < MIN_ANSWERS:
+        raise RuntimeError(
+            "Less than %d answers found in a question from %s:\n%s" % (
+                MIN_ANSWERS, question_filename, question_text
+        ))
+    
+    unique_answers = set(answer for _, answer in answers)
+    if len(answers) != len(unique_answers):
+        raise RuntimeError(
+            "Duplicate answers found in a question from %s:\n%s" % (
+                question_filename, question_text
+        ))
+    
+    num_positive_answers = len([sign for sign, _ in answers if sign == '+'])
+    if num_positive_answers != 1:
+        reason = "More" if num_positive_answers > 1 else "Less"
+        raise RuntimeError(
+            "%s than 1 positive answer found in a question from %s:\n%s" % (
+                reason, question_filename, question_text
+        ))
+
 def parse_question_file(test_id, filename):
     questions = []
     buff = []
@@ -104,12 +148,15 @@ def parse_question_file(test_id, filename):
                     buff.append(line)
                 
                 if line.strip() == QUESTION_END_MARKER:
-                    questions.append(''.join(buff))
-                    buff = []
+                    q = ''.join(buff)
                     logging.debug(
                         "Parsing %s, found question:\n%s",
-                        pretty_question_filename(test_id, filename), questions[-1]
+                        pretty_question_filename(test_id, filename), q
                     )
+                    
+                    check_question(test_id, filename, q)
+                    questions.append(q)
+                    buff = []
     
     logging.info(
         "Parsed %s, found %d question(s)",
