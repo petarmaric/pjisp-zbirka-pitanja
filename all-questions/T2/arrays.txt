@@ -33,9 +33,7 @@ Kako se pravilno ucitava drugi clan celobrojnog niza a?
 - scanf("%d", a+2);
 - scanf("%d", &a[2]);
 - scanf("%d", &(a+1));
-- scanf("%d", *(a+1));
 - scanf("d", &a[2]);
-- scanf("%f", &a[1]);
 .
 
 Kako se pravilno ucitava prvi clan celobrojnog niza a?
@@ -48,9 +46,7 @@ Kako se pravilno ucitava prvi clan celobrojnog niza a?
 - scanf("%d", a+1);
 - scanf("%d", &a[1]);
 - scanf("%d", &(a+1));
-- scanf("%d", *(a+1));
 - scanf("d", &a[1]);
-- scanf("%f", &a[0]);
 .
 
 Odabrati ispravan SNIPPET za ispis niza u obrnutom redosledu:
@@ -67,8 +63,6 @@ Odabrati ispravan SNIPPET za ispis niza u obrnutom redosledu:
 - i = n; i > 0; i--
 - j = n-1; j > 0; j++
 - i = n-1; i > 0; i++
-- j = 0; j < n; j++
-- i = 0; i < n; i++
 .
 
 Odabrati ispravan SNIPPET za ispis svakog 3. clana niza:

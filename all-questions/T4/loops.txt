@@ -155,7 +155,6 @@ Program ispisuje:
 -Program nece terminirati (beskonacna petlja)
 -0 0
 -1 0
--2 3
 .
 
 Dat je program: 
@@ -174,7 +173,6 @@ Program ispisuje:
 -Program nece terminirati (beskonacna petlja)
 -0 1
 -1 2
--2 3
 .
 
 Dat je program: 
@@ -193,7 +191,6 @@ Program ispisuje:
 -Program nece terminirati (beskonacna petlja)
 -0 1
 -1 2
--2 3
 .
 
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
