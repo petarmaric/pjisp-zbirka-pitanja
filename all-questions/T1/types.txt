@@ -168,12 +168,6 @@ Nakon izvrsavanja sledeceg bloka koda vrednost promenljive fahr ce biti:
 + Neodredjena vrednost
 .
 
-Da li promenljiva tipa int zauzima vise radne memorije od promenljive tipa unsigned int?
-+ Ne, zauzimaju isto
-- Ne, unsigned int zauzima vise
-- Da, int zauzima vise
-.
-
 Nakon izvrsavanja sledeceg bloka koda vrednost promenljive x ce biti:
 	int a;
     int b = 1;
@@ -219,21 +213,6 @@ Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
 - 2
 - Nije moguce znati unapred
 - Doci ce do greske prilikom prevodjenja
-.
-
-Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
-	#include <stdio.h>
-	int main()
-	{
-		int a=5, b=8, c=2;
-		printf("%d",b%a%c);
-		return 0;
-	}
-- 0
-+ 1
-- 2
-- 5
-- 8
 .
 
 Koji ce broj biti prikazan kao rezultat izvrsavanja sledeceg koda?
