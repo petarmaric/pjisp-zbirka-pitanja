@@ -6,7 +6,7 @@ import re
 import shutil
 
 
-DEFAULT_NUM_GROUPS = 7
+DEFAULT_NUM_GROUPS = 8
 DEFAULT_NUM_QUESTIONS_PER_GROUP = 5
 
 QUESTIONS_DIR = 'all-questions'
