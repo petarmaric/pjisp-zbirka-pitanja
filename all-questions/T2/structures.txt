@@ -99,3 +99,9 @@ Koja ce biti vrednost promenljive broj nakon izvrsavanja koda:
 +Struktura nije pravilno deklarisana!
 -Promenljiva t nije pravilno deklarisana!
 . 
+
+Najmanji string u koji se moze u celosti uspesno upisati podatak "" je:
+-char str[0];
++char str[1];
+-char str[2];
+.

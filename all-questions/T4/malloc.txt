@@ -28,3 +28,18 @@ Potrebno je osloboditi memorijski blok koji je zauzimala sledeca struktura:
 -novi=(SCVOR *)malloc(sizeof(int));
 +free(novi);
 .
+
+Koliko bajtova radne memorije ce zauzeti naredni malloc poziv?
+	struct st {
+		int a;
+		char b[30];
+		char c;
+	};
+	struct st t = (struct st *)malloc(sizeof(struct st));
+-4
+-30
+-31
+-34
++35
+-36
+.

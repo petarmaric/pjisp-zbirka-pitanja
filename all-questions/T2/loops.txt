@@ -234,3 +234,26 @@ Kakav je izlaz nakon izvrsavanja koda:
 -10
 -1
 .
+
+Koliko ce se puta izvrsiti while petlja u kodu:
+        #include <stdio.h>
+        int main()
+        {
+                int i=5;
+                int a[10]={-4,-2,0,1,2,3,4,5,8,0};
+                int *p=a+2;
+                do {
+                    printf("%d\n", i);
+                    p++;
+                    i--;
+                } while(*p);
+                return 0;
+        }
+-0 puta
+-1 put
+-2 puta
+-5 puta
++7 puta
+-8 puta
+-10 puta
+.
