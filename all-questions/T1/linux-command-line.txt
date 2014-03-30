@@ -27,17 +27,17 @@ Kompajliranje u terminalu upotrebom GNU Compiler-a se vrsi putem:
 - gcc -g -o zadatak.c zadatak
 - gcc -o zadatak.c zadatak
 - cc -g -o zadatak zadatak.c
-- cc -lm -o zadatak zadatak.c
+- cc -o zadatak zadatak.c -lm
 - gcc -o zadatak zadatak
 + gcc -o zadatak zadatak.c
 .
 
 Kompajliranje u terminalu upotrebom GNU Compiler-a sa upotrebom matematicke biblioteke se vrsi putem:
-- gcc -lm -o zadatak.c zadatak
+- gcc -o zadatak.c zadatak -lm
 - gcc -o zadatak.c zadatak
 - cc -g -o zadatak zadatak.c
-- cc -lm -o zadatak zadatak.c
-+ gcc -lm -o zadatak zadatak.c
+- cc -o zadatak zadatak.c -lm
++ gcc -o zadatak zadatak.c -lm
 .
 
 U Linux terminalu, nakon poziva komande 'gcc -o zadatak zadatak.c', dobijena izvrsna datoteka se pokrece komandom:
