@@ -218,14 +218,14 @@ def pretty_question_ids(question_ids):
         for (test_id, filename, question_id) in question_ids)
     )
 
-def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
+def generate_tests(all_questions, test_id, groups, num_questions_per_group):
     otisak_questions_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_QUESTIONS_DIR)
     os.makedirs(otisak_questions_dir)
     
     num_questions_per_file = dict((f, len(q)) for f, q in all_questions.items())
     
     num_total_questions = sum(num_questions_per_file.values())
-    num_questions_needed = num_groups * num_questions_per_group
+    num_questions_needed = len(groups) * num_questions_per_group
     logging.info("Total %d question(s) found, need %d", num_total_questions, num_questions_needed)
     if num_questions_needed > num_total_questions:
         raise ValueError('Not enough questions found')
@@ -235,7 +235,7 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
         for (q_test_id, filename), num_questions in num_questions_per_file.items()
             for question_id in range(num_questions) 
     ])
-    for group_id in xrange(1, num_groups+1):
+    for group_id in groups:
         logging.debug(
             "%d question(s) available for group %d: %s",
             len(available_question_ids), group_id, pretty_question_ids(available_question_ids)
@@ -264,12 +264,12 @@ def generate_tests(all_questions, test_id, num_groups, num_questions_per_group):
         
         logging.info("Generated the test %s for group %d", group_filename, group_id)
 
-def generate_otisak_test_file(test_id, num_groups, num_questions_per_group):
+def generate_otisak_test_file(test_id, groups, num_questions_per_group):
     otisak_tests_dir = os.path.join(GENERATED_TESTS_DIR, test_id, OTISAK_TEST_DIR)
     os.makedirs(otisak_tests_dir)
     filename = OTISAK_TEST_FILENAME_FMT % test_id
     with open(os.path.join(otisak_tests_dir, filename), 'wb') as fp:
-        for group_id in xrange(1, num_groups+1):
+        for group_id in groups:
             fp.write(testmaker_postprocess(OTISAK_TEST_HEADER_FMT % locals()))
             
             for question_idx in xrange(1, num_questions_per_group+1):
@@ -307,8 +307,13 @@ def main():
     
     # Parse input
     test_id = choose_test()
-    num_groups = prompt(
-        text='How many student groups?',
+    start_group = prompt(
+        text='Start generating tests at what student group?',
+        default_value=1,
+        validate=int
+    )
+    stop_group = prompt(
+        text='Stop generating tests at what student group?',
         default_value=DEFAULT_NUM_GROUPS,
         validate=int
     )
@@ -334,8 +339,9 @@ def main():
     
     # Generate tests
     all_questions = parse_questions(test_id)
-    generate_tests(all_questions, test_id, num_groups, num_questions_per_group)
-    generate_otisak_test_file(test_id, num_groups, num_questions_per_group)
+    groups = range(start_group, stop_group+1)
+    generate_tests(all_questions, test_id, groups, num_questions_per_group)
+    generate_otisak_test_file(test_id, groups, num_questions_per_group)
     
     logging.info('DONE!')
 
