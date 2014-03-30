@@ -1,7 +1,0 @@
-Sta je od navedenog editor teksta u Linux okruzenju?
-- ddd
-- gcc
-+ gedit
-- ubuntu
-- Nista od gorenavedenog
-.
