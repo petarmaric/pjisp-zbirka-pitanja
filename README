@@ -1,7 +1,7 @@
 About
 =====
 
-Konzolna aplikacija za automatsko kreiranje OTISAK testova za PJISP E2.
+Konzolna aplikacija za automatsko kreiranje OTISAK testova za PJISP.
 
 
 Console app usage
@@ -24,6 +24,6 @@ If you find any bugs, or wish to propose new features `please let us know`_.
 If you'd like to contribute, simply fork `the repository`_, commit your changes
 and send a pull request. Make sure you add yourself to `AUTHORS`_.
 
-.. _`please let us know`: https://bitbucket.org/petar/pjisp_e2_testovi/issues/new
-.. _`the repository`: http://bitbucket.org/petar/pjisp_e2_testovi
-.. _`AUTHORS`: https://bitbucket.org/petar/pjisp_e2_testovi/src/default/AUTHORS
+.. _`please let us know`: https://bitbucket.org/petar/pjisp_testovi/issues/new
+.. _`the repository`: http://bitbucket.org/petar/pjisp_testovi
+.. _`AUTHORS`: https://bitbucket.org/petar/pjisp_testovi/src/default/AUTHORS
