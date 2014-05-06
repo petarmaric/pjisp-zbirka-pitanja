@@ -21,7 +21,7 @@ GENERATED_TESTS_DIR = 'generated-tests'
 GENERATED_TEST_FILENAME_FMT = "%sG%d.txt"
 GENERATED_TEST_HEADER_FMT = "//Pitanja za PJiSP %sG%d\n"
 GENERATED_TEST_QUESTION_FMT = """*%d
-/t
+/te
 %s
 """
 
