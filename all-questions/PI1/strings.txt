@@ -13,7 +13,7 @@ Sta vraca poziv funkcije strlen u sledecem kodu:
 -4
 -6
 +3
-. 
+.
 
 Sta nam vraca poziv funkcije strlen u sledecem kodu:
 	int main()
@@ -45,7 +45,7 @@ Sta vraca poziv funkcije strlen u sledecem kodu:
 +4
 -6
 -3
-. 
+.
 
 Sta vraca poziv funkcije strlen u sledecem kodu:
 	#include <stdio.h>
@@ -63,7 +63,7 @@ Sta vraca poziv funkcije strlen u sledecem kodu:
 -6
 -3
 +0
-. 
+.
 
 Data je rec "0123456789", najmanji string u koji se ona moze upisati u celosti je:
 +char str[11];
@@ -92,34 +92,34 @@ Data je rec "12346789", najmanji string u koji se ona moze upisati u celosti je:
 Da bi prikazali na ekranu string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 +Oba ponudjena
 -iskljucivo: printf("\n%s",str);
--iskljucivo: puts(str); 
+-iskljucivo: puts(str);
 .
 
 Da bi procitali sa tastature string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 -Oba ponudjena
 -iskljucivo: scanf("%s",str);
 +iskljucivo: gets(str);
-. 
+.
 
 Da bi procitali sa tastature string char str[]="Primer_prvog_stringa"; u celosti to mozemo uraditi sa:
 +Oba ponudjena
 -iskljucivo: scanf("%s",str);
 -iskljucivo: gets(str);
-. 
+.
 
 Da bi prikazali na ekranu string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 -Oba ponudjena
 -gets(str);
-+puts(str); 
++puts(str);
 .
 
 Da bi procitali sa tastature string char str[]="Primer prvog stringa"; u celosti to mozemo uraditi sa:
 -Oba ponudjena
 +gets(str);
--puts(str); 
+-puts(str);
 .
 
-Koliko vidljivih (stampajucih) karaktera ima string a[]:
+Koliko vidljivih (stampajucih) karaktera ima string a:
 	int main()
 	{
 		char a[]={'1','2','3','\0','4','0'};
