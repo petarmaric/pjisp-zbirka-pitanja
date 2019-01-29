@@ -1,3 +1,18 @@
+U C jeziku, konstante i promenljive mogu biti tipa void.
++netacno
+-tacno
+-void nije tip
+.
+
+Kojeg tipa je sledeci kompletan izraz:
+	(short int)3/3.0
++double
+-int
+-char
+-short
+-short int
+.
+
 Sta ce biti rezultat izvrsavanja sledeceg koda:
 	#include <stdio.h>
 	int main()

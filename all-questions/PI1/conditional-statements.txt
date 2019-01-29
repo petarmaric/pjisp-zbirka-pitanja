@@ -42,6 +42,36 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 
 Posle izvrsavanja sledeceg koda izlaz ce biti:
 	#include <stdio.h>
+	int main() {
+		int a=1;
+		int b=0;
+		if (a?b:a)
+			printf("Veci je b");
+		else
+			printf("Veci je a");
+		return 0;
+	}
+-Veci je b
++Veci je a
+.
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
+	int main() {
+		int a=0;
+		int b=1;
+		if ((a>b) ? a : b)
+			printf("Veci je b");
+		else
+			printf("Veci je a");
+		return 0;
+	}
++Veci je b
+-Veci je a
+.
+
+Posle izvrsavanja sledeceg koda izlaz ce biti:
+	#include <stdio.h>
 	int main()
 	{
 		int ocena=1;
@@ -150,7 +180,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 			printf("Vece! ");
 			printf("Razlicito! ");
 	}
-- Manje! 
+- Manje!
 - Vece! Razlicito!
 - Razlicito!
 - Vece!
@@ -169,7 +199,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 			printf("Vece! ");
 			printf("Razlicito! ");
 	}
-- Manje! 
+- Manje!
 + Vece! Razlicito!
 - Razlicito!
 - Vece!
@@ -188,7 +218,7 @@ Posle izvrsavanja sledeceg koda izlaz ce biti:
 			printf("Vece! ");
 			printf("Razlicito! ");
 	}
-- Manje! 
+- Manje!
 - Vece! Razlicito!
 - Razlicito!
 - Vece!
@@ -200,9 +230,9 @@ Koji ce tekst biti prikazan kao rezultat izvrsavanja sledeceg koda?
 	int main()
 	{
 		int x=-3;
-		if(x+3) 
+		if(x+3)
 		printf("istina");
-		else 
+		else
 		printf("neistina");
 		return 0;
 	}
@@ -211,4 +241,15 @@ Koji ce tekst biti prikazan kao rezultat izvrsavanja sledeceg koda?
 + neistina
 - Nikakav tekst nece biti prikazan
 - Doci ce do greske prilikom prevodjenja
+.
+
+Koji ce tekst biti prikazan kao rezultat izvrsavanja sledeceg koda?
+	int x=10, y=20, z=30;
+	if(x==10) x=20; y=30; z=40;
+	if(y==20) x=30; y=40; z=50;
+	if(z==50) x=10; y=20; z=30;
+	printf("%d %d %d",x,y,z);
+-30 40 50
++10 20 30
+-20 30 40
 .

@@ -1,0 +1,29 @@
+Stek je struktura tipa:
++LIFO
+-FIFO
+.
+
+Stek je:
++linearna struktura
+-nelinearna struktura
+-linearna, odnosno nelinearna struktura - u zavisnosti od fizicke realizacije
+.
+
+Najjednostavnija implementacija STEK-a je:
++sekvencijalna realizacija
+-spregnuta realizacija
+-realizacija upotrebom jednostruko spregnute liste
+-realizacija upotrebom dvostruko spregnute liste
+.
+
+Prilikom sekvencijalne realizacije steka:
+-memorija za cvorove se dinamicki alocira u vreme izvrsavanja programa
++potrebna memorija se mora rezervisati unapred, pre prevodenja
+-memoriju za cvorove alocira pretprocesor
+.
+
+Prilikom spregnute realizacije steka:
++memorija za cvorove se dinamicki alocira u vreme izvrsavanja programa
+-potrebna memorija se mora rezervisati unapred, pre prevodenja
+-memoriju za cvorove alocira pretprocesor
+.

@@ -19,7 +19,7 @@ Sta ce biti rezultat izvrsavanja sledeceg koda (ASCII tabela je na bimu)?
 	#include <stdio.h>
 	int main()
 	{
-        char promenljiva_1='j';
+        char promenljiva_1='j'; // ASCII od 'j' je 106
         int promenljiva_2;
         int promenljiva_3=1;
         printf("%d",promenljiva_1+promenljiva_3);

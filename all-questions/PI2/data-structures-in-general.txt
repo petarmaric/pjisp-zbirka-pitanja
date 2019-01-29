@@ -1,0 +1,100 @@
+Zajednicki imenitelj za sve linearne strukture je:
++postojanje serije podataka jednodimenzijalnog poretka
+-upotreba funkcije malloc().
+-upotreba funkcije free()
+.
+
+Struktura koja sadrzi pokazivac na objekat istog tipa kao sto je ona sama naziva se:
++samo-upucujuca struktura podataka
+-staticka struktura
+-dinamicka struktura
+.
+
+Skalarni tip koji sadrzi adresu nekog objekta u memoriji je:
+-samo-upucujuca struktura podataka
+-staticka struktura
+-dinamicka struktura
++pokazivac
+.
+
+Dinamicka struktura koja je linearna po svakoj relaciji uspostavljenoj medju njenim podacima je:
++ Lista
+- Matrica
+- Stablo
+- Hip
+.
+
+Za specificnu fizicku implementaciju linearne strukture podataka, pre svega, treba detektovati:
++ namenu i podskup operacija koje treba realizovati.
+- koliko maksimalno elemenata moze da ima posmatrana struktura.
+- sta ce biti identifikator posmatrane strukture.
+- da li struktura ima ZAGLAVLJE.
+.
+
+Linearna struktura podataka koja se sastoji od konacno mnogo elemenata istog skalarnog ili strukturnog tipa se zove:
++ Niz
+- Stablo
+- Hip
+.
+
+Logicka struktura i fizicka reprezentacija se poklapaju kod:
++Niza
+-STACK-a
+-QUE-a
+-DEQUE-a
+.
+
+Za kreiranje nizova tokom izvrsavanja koristimo:
++ HEAP
+- STACK
+- QUE
+- DEQUE
+.
+
+Koja od sledecih struktura koristi FIFO metodu pristupa?
++red
+-stek
+-hash tabela
+-binarno stablo pretrage
+.
+
+Koja struktura je definisana kao uredjeni par 'D = (S(D), r(D))' sa sledecim osobinama:
+	struktura je linearna,
+	dozvoljen je pristup svakom elementu,
+	ukloniti se mogu samo svi elementi odjednom,
+	novi element se dodaje na kraj
++sekvenca
+-STEK
+-RED
+-DEK
+-uopsteno stablo
+.
+
+Predstavljanje pomocu sasvim levog deteta i desnog brata, je mehanizam predstavljanja:
+-binarnog stabla
+-binarnog stabla pristupa
+-DEK-a
+-steka
++opsteg (uopstenog) stabla
+.
+
+Ako je intuitivni model za strukturu podataka cekanje na kasi u supermarketu, koja je to struktura?
++QUEUE
+-DEQUE
+-STACK
+-SEQUENCE
+.
+
+Struktura podataka koja po osobinama predstavlja sintezu osobina reda i steka je:
+-QUEUE
++DEQUE
+-STACK
+-SEQUENCE
+.
+
+Jednostruko spregnuta linearna lista, moze biti iskoristena kao fizicka realizacija:
++ steka i reda
+- steka, ne reda
+- reda, ne steka
+- ni reda ni steka
+.

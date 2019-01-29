@@ -1,3 +1,74 @@
+Da li je NULL pokazivac isto sto i neinicijalizovani pokazivac?
++ne
+-da
+.
+
+Unarni operator referenciranja "&"
++vraca adresu promenljive
+-omogucuje posredan pristup nekom podatku putem njegove memorijske adrese
+-vraca sadrzaj pokazivacke promenljive
+.
+
+Unarni operator dereferenciranja "*"
+-vraca adresu promenljive
++omogucuje posredan pristup nekom podatku putem njegove memorijske adrese
+-vraca sadrzaj pokazivacke promenljive
+.
+
+Pokazivac tipa "void *" moze da predstavlja:
++adresu bilo kog objekta
+-tip bilo kog objekta
+-vraca sadrzaj pokazivacke promenljive
+.
+
+Ograniceni pokazivac se dobija primenom kvalifikatora:
++restrict
+-extern
+-const
+-inline
+.
+
+Izmedju ogranicenog pokazivaca i objekta na koji pokazuje postoji sledeca veza:
++Tokom zivotnog veka pokazivaca, objekat se moze menjati ili mu se pristupati samo pomocu tog pokazivaca.
+-Tokom zivotnog veka pokazivaca, objekat se ne moze menjati.
+-Tokom zivotnog veka objekta, pokazivac se ne moze menjati.
+.
+
+Nepromenljivi pokazivac na promenljive podatke se deklarise sa:
+-tip *p
++tip *const p
+-const tip *p
+-const tip *const p
+.
+
+Promenljivi pokazivac na nepromenljive podatke se deklarise sa:
+-tip *p
+-tip *const p
++const tip *p
+-const tip *const p
+.
+
+Nepromenljivi pokazivac na nepromenljive podatke se deklarise sa:
+-tip *p
+-tip *const p
+-const tip *p
++const tip *const p
+.
+
+Pokazivac p iz izraza "tip *const p" je:
+-promenljivi pokazivac na promenljive podatke
++nepromenljivi pokazivac na promenljive podatke
+-promenljivi pokazivac na nepromenljive podatke
+-nepromenljivi pokazivac na nepromenljive podatke
+.
+
+Pokazivac p iz izraza "const tip *p" je:
+-promenljivi pokazivac na promenljive podatke
+-nepromenljivi pokazivac na promenljive podatke
++promenljivi pokazivac na nepromenljive podatke
+-nepromenljivi pokazivac na nepromenljive podatke
+.
+
 Posle izvrsavanja sledeceg koda izlaz ce biti:
 	#include <stdio.h>
 	int main()
@@ -20,4 +91,18 @@ Kako se pravilno uvezuje pokazivac pi na promenljivu i?
 + pi = &i;
 - *pi = i;
 - *pi = &i;
+.
+
+Ako je zadato:
+	int *pt[10];
++pt je pokazivac na niz od 10 pokazivaca na cele brojeve.
+-pt je niz od 10 pokazivaca na cele brojeve.
+-pt je niz od 10 celih pokazivaca.
+-pt je niz od 10 pokazivaca.
+.
+
+Da li je u programskom jeziku C dozvoljeno dodavanje proizvoljne celobrojne vrednosti na postojecu vrednost pokazivaca?
++Dozvoljeno je
+-Nije dozvoljeno
+-Dozvoljena je iskljucivo upotreba operatora inkrementatora i dekrementatora
 .

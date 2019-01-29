@@ -1,0 +1,7 @@
+Binarni HEAP je:
+-Linearna struktura
++Nelinearna struktura
+-LIFO
+-FIFO
+-FUFI
+.

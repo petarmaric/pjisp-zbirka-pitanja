@@ -1,3 +1,9 @@
+Programski jezik C za pristup datotekama koristi:
++Funkcije standardne biblioteke.
+-Naredbe programskog jezika.
+-C ne podrzava rad sa datotekama, vec samo sa standardnim tokovima podataka.
+.
+
 Kog tipa je promenljiva dat koja figurise u sledecem kodu?
 	if((IZLdat=fopen(dat,"w"))==NULL)
 	{
@@ -13,7 +19,7 @@ Kog tipa je promenljiva dat koja figurise u sledecem kodu?
 +string
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera".
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 	int main()
 	{
@@ -28,7 +34,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 +PeraPetlic
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera".
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 	int main()
 	{
@@ -43,7 +49,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 -PeraPetlic
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera".
 Koji je rezultat izvrsavanja sledeceg koda:
 	#include <stdio.h>
 	int main(){
@@ -60,7 +66,7 @@ Koji je rezultat izvrsavanja sledeceg koda:
 +P
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera".
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 	#include <stdio.h>
 	int main(){
@@ -76,7 +82,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 +P
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisana rec "Pera".
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 	#include <stdio.h>
 	int main(){
@@ -92,7 +98,7 @@ Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 -P
 .
 
-U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisan sadrzaj "1234". 
+U korenskom diriktorijumu se nalazi tekstualni fajl "test.txt", u kome je zapisan sadrzaj "1234".
 Kakav ce biti sadrzaj fajla nakon izvrsavanja sledeceg koda:
 	#include <stdio.h>
 	int main(){
