@@ -7,8 +7,8 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-- 0 puta	
-- 4 puta	
+- 0 puta
+- 4 puta
 - 5 puta
 + 6 puta
 - 9 puta
@@ -26,8 +26,8 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-+ 0 puta	
-- 4 puta	
++ 0 puta
+- 4 puta
 - 5 puta
 - 6 puta
 - 9 puta
@@ -45,8 +45,8 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-- 0 puta	
-- 4 puta	
+- 0 puta
+- 4 puta
 - 5 puta
 - 6 puta
 - 9 puta
@@ -64,8 +64,8 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-- 0 puta	
-- 4 puta	
+- 0 puta
+- 4 puta
 - 5 puta
 - 6 puta
 - 9 puta
@@ -83,8 +83,8 @@ Koliko ce se puta izvrsiti for petlja u kodu:
             printf("%d",i);
 		return 0;
 	}
-+ 0 puta	
-- 4 puta	
++ 0 puta
+- 4 puta
 - 5 puta
 - 6 puta
 - 9 puta
@@ -104,8 +104,8 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 		printf("%d",a);
 		return 0;
 	}
-- 0       
-- 2       
+- 0
+- 2
 + 3
 - 4
 - 5
@@ -124,8 +124,8 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 		printf("%d",a);
 		return 0;
 	}
-- 0        
-- 2       
+- 0
+- 2
 + 3
 - 4
 - 5
@@ -160,7 +160,7 @@ Koja ce biti vrednost promenljive a nakon izvrsavanja sledece petlje:
         do{
             i++;
         }while(a<5);
-        printf("%d",i); 
+        printf("%d",i);
 		return 0;
 	}
 -11
@@ -304,7 +304,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 	int main()
 	{
 		int i= -3, a= 4, p= 0;
-	
+
 		while(p=i-a+2){
 			printf("%d\n", i);
 			i++;
@@ -317,7 +317,7 @@ Koliko ce se puta izvrsiti while petlja u kodu:
 +5 puta
 .
 
-Dat je program: 
+Dat je program:
 	#include <stdio.h>
 	int main()
 	{
@@ -325,9 +325,8 @@ Dat je program:
 		int a[7] = {0,1,2,3,2,1,0};
 		while(a[i]!=a[j]) i++; j++; printf("%d %d ",a[i],a[j]);
 		return 0;
-	} 
-
-Program ispisuje: 	
+	}
+Program ispisuje:
 +2 3
 -0 2 1 3
 -Program nece terminirati (beskonacna petlja)
@@ -336,7 +335,7 @@ Program ispisuje:
 -2
 .
 
-Dat je program: 
+Dat je program:
 	#include <stdio.h>
 	int main()
 	{
@@ -345,7 +344,7 @@ Dat je program:
 		while(a[i]=a[j]) i++; j++; printf("%d %d ",a[i],a[j]);
 		return 0;
 	}
-Program ispisuje: 
+Program ispisuje:
 -2 1
 -2 3
 -0 3
@@ -411,4 +410,73 @@ Sta treba da stoji umesto XXX kako bi se printf naredba izvrsila tacno 15 puta?
 - j == 16
 + j <= 16
 - j <= 17
+.
+
+Sta ispisuje sledeci program:
+	#include <stdio.h>
+	int main() {
+		int i;
+		for(i=1; i<=5; i++) {
+			if(i==3) {
+				break;
+				continue;
+			}
+
+			printf("%d ", i);
+		}
+
+		return 0;
+	}
+- 1 2 4 5
++ 1 2
+- 0 1 2
+- 0 1 2 3 4 5
+- 1 2 3 4 5
+- 0 1 2 4 5
+.
+
+Sta ispisuje sledeci program:
+	#include <stdio.h>
+	int main() {
+		int i;
+		for(i=1; i<=5; i++) {
+			if(i==3) {
+				continue;
+				break;
+			}
+
+			printf("%d ", i);
+		}
+
+		return 0;
+	}
++ 1 2 4 5
+- 1 2
+- 0 1 2
+- 0 1 2 3 4 5
+- 1 2 3 4 5
+- 0 1 2 4 5
+.
+
+Koliko puta ce na standardnom izlazu biti odstampano PJISP?
+	#include <stdio.h>
+	int main() {
+		int x=-1;
+		for( ; x<=10; x++) {
+			if(x < 5)
+				continue;
+			else
+				break;
+
+			printf("PJISP");
+		}
+
+		return 0;
+	}
+
++0 puta
+-10 puta
+-9 puta
+-11 puta
+-beskonacno mnogo puta
 .

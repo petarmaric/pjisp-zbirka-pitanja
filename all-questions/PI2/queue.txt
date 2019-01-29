@@ -1,0 +1,44 @@
+RED je struktura tipa:
+-LIFO
++FIFO
+.
+
+Deskriptor spregnute realizacije RED-a (QUEUE) sadrzi:
++dva pokazivaca
+-tri pokazivaca
+-jedan pokazivac
+-deskriptor ne sadrzi pokazivace
+.
+
+Provera da li je RED prazan je:
++izvedena operacija nad RED-om
+-osnovna operacija nad RED-om
+-primitivna funkcija nad RED-om
+.
+
+Sta radi sledeca funkcija:
+	void fija(struct node **front, struct node **rear, int value) {
+		struct node *temp = (struct node *)malloc(sizeof(struct node));
+		if(temp==NULL) {
+			printf("Greska pri alociranju memorije.\n");
+			exit(42);
+		}
+
+		temp->data = value;
+		temp->link=NULL;
+
+		if(*rear == NULL) {
+			*rear = temp;
+			*front = *rear;
+		} else {
+			(*rear)->link = temp;
+			*rear = temp;
+		}
+	}
++ubacuje novi element u RED
+-ubacuje novi element u STEK
+-uklanja element uz RED-a
+-uklanja element iz STEK-a
+-ubacuje novi element u binarni HIP
+-uklanja element uz binarnog HIP-a
+.

@@ -1,0 +1,52 @@
+Vrednost pokazivaca na sledeci cvor u cvoru na kraju dvostruko spregnute liste ima vrednost:
++NULL
+-EOF
+-END
+-FF
+-VOID
+.
+
+Koju operaciju nad dvostruko spregnutom listom,implementira sledeci deo koda:
+	for (tek=lst.posl;tek;tek=tek->pret);
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
++obilazak liste u nazad
+-obilazak liste u napred
+-brisanje elementa iz liste
+-brisanje liste
+.
+
+Sta radi sledeci fragment koda na programskom jeziku C, pod pretpostavkom da dinamicka
+alokacija memorije uvek uspeva? Polja prvi, posl i tek strukture Lista pokazuju na prvi,
+poslednji i tekuci element liste, respektivno. Smatrati da lista nije prazna i da tek nije NULL.
+	typedef struct elem { int broj; struct elem *pret, *sled; } Elem;
+	typedef struct { Elem *prvi, *posl, *tek; } Lista;
+		void dodaj (Lista *lst, int b) {
+		Elem *novi = malloc (sizeof(Elem));
+		novi->broj = b;
+		novi->pret = lst->tek->pret;
+		novi->sled = lst->tek;
+		if (!lst->tek->pret) lst->prvi = novi;
+		else lst->tek->pret->sled = novi;
+		lst->tek = lst->tek->pret = novi;
+	}
++Dodaje element u dvostruko ulancanu listu ispred tekuceg elementa i dodati element postaje tekuci.
+-Dodaje element u dvostruko ulancanu listu iza tekuceg elementa i dodati element postaje tekuci.
+-Dodaje element u dvostruko ulancanu listu na pocetak liste i dodati element postaje tekuci.
+.
+
+Drugi naziv za dvostruko spregnute liste je:
++ simetricna lista
+- lista sa zaglavljem
+- tezinska lista
+- pokazivacka lista
+.
+
+Za operaciju uklanjanje cvora kod dvostruko spregnute liste potrebno je znati:
++ pokazivac na cvor koji brisemo (TEKUCI)
+- pokazivac na prethodni cvor (PREDHODNI)
+- pokazivac na prethodni cvor (PREDHODNI) i pokazivac na cvor koji brisemo (TEKUCI)
+- pokazivac na sledeci cvor (SLEDECI)
+- pokazivac na sledeci cvor (SLEDECI) i pokazivac na cvor koji brisemo (TEKUCI)
+- pokazivac na sledeci cvor (SLEDECI) i pokazivac na prethodni cvor (PREDHODNI)
+.

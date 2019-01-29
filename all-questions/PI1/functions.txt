@@ -1,14 +1,29 @@
+Parametri funkcije su:
++lokalne promenljive
+-globalne promenljive
+-nisu promenljive
+-neinicijalizovane lokalne promenljive
+-neinicijalizovane globalne promenljive
+.
+
+Oblast vazenja parametara funkcija je:
+-oblast vazenja parametara nije ogranicena
+-zaglavlje funkcije
+-ceo fajl
++funkcija
+.
+
 Koji ce biti rezultat izvrsavanja sledeceg koda:
-	void f(int a) { 
-		a = 3; 
-	} 
-	int main() { 
-		int a = 5; 
-		f(a); 
-		printf("%i", a); 
-	} 
-+5 
--3 
+	void f(int a) {
+		a = 3;
+	}
+	int main() {
+		int a = 5;
+		f(a);
+		printf("%i", a);
+	}
++5
+-3
 -Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
 .
 
@@ -22,10 +37,10 @@ Koji ce biti rezultat izvrsavanja sledeceg koda:
 	   printf("%d", a);
 	   return 0;
 	}
--5 
-+3 
+-5
++3
 -Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
-. 
+.
 
 Koji ce biti rezultat izvrsavanja sledeceg koda:
 	void f(int *i) {
@@ -37,8 +52,8 @@ Koji ce biti rezultat izvrsavanja sledeceg koda:
 	   printf("%i", a);
 	   return 0;
 	}
--5 
--3 
+-5
+-3
 +Prilikom kompajliranja dobijamo upozorenje da u pokazivac upisujemo ceo broj.
 .
 
@@ -143,6 +158,7 @@ Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
 .
 
 Koja ce vrednost biti odstampana nakon izvrsavanja sledeceg koda:
+	#include <stdio.h>
 	int f(int *i, int a)
 	{
 		a=*i;
@@ -183,7 +199,7 @@ Kog je tipa povratna vrednost funkcije:
 		*k=x+y;
 	}
 -int
--int * 
+-int *
 -float
 +Ova funkcija nema povratnu vrednost
 .
@@ -193,7 +209,7 @@ Kog je tipa povratna vrednost funkcije:
 		*k=x+y;
 	}
 -int
-+int * 
++int *
 -float
 -Ova funkcija nema povratnu vrednost
 .

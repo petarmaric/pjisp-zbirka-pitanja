@@ -1,0 +1,77 @@
+Vrednost pokazivaca na sledeci cvor u cvoru na kraju jednostruko spregnute liste ima vrednost:
++NULL
+-EOF
+-END
+-FF
+-VOID
+.
+
+Koju operaciju nad jednostruko spregnutom listom karaktera, implementira sledeci deo koda:
+	tek=glava;
+	while(tek!=NULL) {
+		printf("%c",tek->znak);
+		tek=tek->sledeci;
+	}
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
++listanje liste
+-brisanje elementa iz liste
+-brisanje liste
+.
+
+Koju operaciju nad jednostruko spregnutom listom karaktera, implementira sledeci deo koda:
+	tek=glava;
+	while(tek!=NULL) {
+		tek=tek->sledeci;
+	}
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
+-brisanje elementa iz liste
+-brisanje liste
++prolazak do kraja liste
+.
+
+Koju operaciju nad jednostruko spregnutom listom karaktera, implementira sledeci deo koda:
+	tek=glava;
+	pret=glava;
+	while(tek!=NULL && (tek->znak != c)) {
+		pret=tek;
+		tek=tek->sledeci;
+	}
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
++trazenje elementa liste
+-brisanje elementa iz liste
+-brisanje liste
+.
+
+Koju operaciju nad jednostruko spregnutom listom karaktera, implementira sledeci deo koda:
+	while(glava!=NULL) {
+		tek=glava;
+		glava=tek->sledeci;
+		free(tek);
+	}
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
+-listanje liste
+-brisanje elementa iz liste
++brisanje liste
+.
+
+Koju operaciju nad jednostruko spregnutom listom karaktera, implementira sledeci deo koda:
+	int foobar(BCVOR* node, int t) {
+		if(node==NULL)
+			return 0;
+
+		if(t==0)
+			return 1;
+
+		return foobar(node->left, t-1) + foobar(node->right, t-1);
+	}
+-inicijalizacija liste
+-unos novog elementa na pocetak liste
+-listanje liste
+-brisanje elementa iz liste
+-brisanje liste
++nije operacija nad listom
+.

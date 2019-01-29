@@ -13,6 +13,13 @@ Odabrati ispravan USLOV:
 - n >= 0 && n <  MAX_SIZE
 .
 
+Kako se moze deklarisati niz celobrojnih vrednosti sa jednim clanom?
+- int niz(1);
+- int niz{1};
++ int niz[1];
+- Nije moguce deklarisati niz sa jednim clanom
+.
+
 Kako se pravilno deklarise celobrojni niz a?
 - int [5]a;
 - int a;[5];
@@ -83,7 +90,7 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 		int i=1;
 		int a[10]={-2,-1,0,1,2,3,4,5,8,0};
 		printf("%d", a[i]);
-				
+
 		return 0;
 	}
 --2
@@ -100,7 +107,7 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 		int i=4;
 		int a[10]={-2,-1,0,1,2,3,4,5,8,0};
 		printf("%d", a[i]);
-				
+
 		return 0;
 	}
 --1
@@ -117,14 +124,14 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 	{
 		int i;
 		int a[10];
-		
+
 		for (i=0;i<10;i++){
 			a[i]=0;
 			if(i==2 || i==4)
-				a[i]=5;					
+				a[i]=5;
 		}
-		
-		printf("%d", a[0]+a[1]+a[2]);				
+
+		printf("%d", a[0]+a[1]+a[2]);
 		return 0;
 	}
 -0
@@ -141,14 +148,14 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 	{
 		int i;
 		int a[10];
-		
+
 		for (i=0;i<10;i++){
 			a[i]=0;
 			if(i<2)
-				a[i]=5;					
+				a[i]=5;
 		}
-		
-		printf("%d", a[0]+a[1]+a[2]);				
+
+		printf("%d", a[0]+a[1]+a[2]);
 		return 0;
 	}
 -0
@@ -181,7 +188,7 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 	int main()
 	{
 		int a[10];
-		printf("%d", a[0]);				
+		printf("%d", a[0]);
 		return 0;
 	}
 -0
@@ -196,9 +203,9 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 	{
 		int a[5];
 		for (i=2;i<5;i++)
-			a[i]=5;				
-		
-		printf("%d", a[0]);				
+			a[i]=5;
+
+		printf("%d", a[0]);
 		return 0;
 	}
 -0
@@ -220,7 +227,6 @@ Kako se moze uneti prvih 8 vrednosti niza realnih brojeva a?
 + for(i=0;i<8;i++) scanf("%f",&a[i]);
 - for(i=0;i<9;i++) scanf("%f",a[i]);
 - for(i=0;i<9;i++) scanf("%f",&a[i]);
-- Nijedan od prethodnih odgovara nije tacan
 .
 
 Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
@@ -233,8 +239,8 @@ Sta ce biti ispisano na standardni izlaz kao rezultat izvrsavanja sledeceg koda:
 		for (i=2;i<5;i++)
 			a[i]=5;
 			suma += a[i];
-		
-		printf("%d", suma);				
+
+		printf("%d", suma);
 		return 0;
 	}
 -5
