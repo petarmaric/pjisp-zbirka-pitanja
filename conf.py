@@ -31,8 +31,6 @@ sys.path.insert(0, os.path.abspath('_ext'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.mathjax',
-
     # local
     'googleanalytics_quickfix',
 ]
