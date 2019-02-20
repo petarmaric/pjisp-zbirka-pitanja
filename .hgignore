@@ -1,6 +1,5 @@
 syntax: glob
-.project
-.pydevproject
+_build/
+TODO.rst
 *.pyc
-generated-tests/
 .vscode/
