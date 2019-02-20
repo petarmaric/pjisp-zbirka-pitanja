@@ -1,0 +1,56 @@
+Sta je to algoritam?
++Opis obrade podataka u kome su precizirane operacije od kojih se obrada sastoji i redosled njihovog obavljanja.
+-Postupak izrazen u programskom jeziku.
+-Pravljenje programa
+.
+
+Kako se naziva opis obrade podataka u kome su precizirane operacije od kojih se
+obrada sastoji i redosled njihovog obavljanja?
++ algoritam
+- izvrsilac
+- programiranje
+- programski jezik
+.
+
+Izvrsilac algoritma moze biti?
+-covek
+-racunar
++oba ponudjena
+.
+
+Kako se naziva algoritam izrazen u programskom jeziku?
++ program
+- izvrsilac
+- programiranje
+- programski jezik
+- binarni kod
+- proces
+.
+
+Skup svih algoritama je:
++prebrojiv
+-neprebrojiv
+-kontinualan
+-konacan
+.
+
+Ako su dva algoritma funkcionalno ekvivalentni onda im se poklapaju i:
++kodeksi
+-algoritamski sistemi
+-algoritamska teza
+.
+
+U sintetickoj definiciji algoritma, algoritam je uređena četvorka (X,Y,G,Z).
+Sta predstavlja G?
+-ulazni alfabet
+-izlazni alfabet
++alfabetski operator
+-kodeks
+.
+
+Element dijagrama toka sa jednom ulaznom i jednom izlaznom linijom u kome se
+obavlja obrada ili prenos podataka naziva se:
++proces
+-predikat
+-kolektor
+.
