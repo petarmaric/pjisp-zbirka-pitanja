@@ -36,7 +36,6 @@ extensions = [
     # local
     'extra_texescape',
     'googleanalytics_quickfix',
-    'lint',
 ]
 
 # Add any paths that contain templates here, relative to this directory.

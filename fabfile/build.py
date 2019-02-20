@@ -41,7 +41,7 @@ def build_books():
 
     print 'Building books...'
     env.is_miktex = is_miktex()
-    
+
     base_dir = os.getcwd()
     os.chdir(os.path.join(SPHINX_BUILD_DIR, 'latex'))
     for filename in fnmatch.filter(os.listdir('.'), '*.tex'):
@@ -49,7 +49,7 @@ def build_books():
         makeindex(filename)
         pdflatex(filename)
         pdflatex(filename)
-    
+
     os.chdir(base_dir)
     print "Build finished; the PDF files are in %s." % os.path.join(SPHINX_BUILD_DIR, 'latex')
 
@@ -66,16 +66,9 @@ def makeindex(filename):
     local("makeindex -q %s.idx" % os.path.splitext(filename)[0])
 
 
-@task
-def lint():
-    sphinx_build('lint')
-
-
 @task(default=True)
 def rebuild_all():
     clean()
-
-    lint()
 
     for builder_name in SPHINX_BUILDERS:
         sphinx_build(builder_name)
