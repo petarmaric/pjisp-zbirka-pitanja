@@ -34,7 +34,6 @@ extensions = [
     'sphinx.ext.mathjax',
 
     # local
-    'extra_texescape',
     'googleanalytics_quickfix',
 ]
 
