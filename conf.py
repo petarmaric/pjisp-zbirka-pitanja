@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# PJISP zbirka zadataka documentation build configuration file, created by
+# PJISP zbirka pitanja documentation build configuration file, created by
 # sphinx-quickstart on Sat Jan 14 21:29:28 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -54,7 +54,7 @@ with codecs.open('AUTHORS', 'r', 'utf-8') as fp:
     authors_str = u', '.join(authors_list)
 author = authors_str
 
-project = u'PJISP zbirka zadataka'
+project = u'PJISP zbirka pitanja'
 
 from datetime import date
 copyright = u'%s, %s' % (date.today().year, author)

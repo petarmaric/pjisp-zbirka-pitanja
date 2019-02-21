@@ -1,7 +1,7 @@
 About
 =====
 
-The `PJISP course`_ problem book that makes coursework easier for our `ACS`_
+The `PJISP course`_ question book that makes coursework easier for our `ACS`_
 students.
 
 .. _`PJISP course`: http://www.acs.uns.ac.rs/sr/pjisp

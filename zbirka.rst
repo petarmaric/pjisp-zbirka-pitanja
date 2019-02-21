@@ -1,5 +1,5 @@
-PJISP zbirka zadataka
-=====================
+PJISP zbirka pitanja
+====================
 
 .. toctree::
    :maxdepth: 2

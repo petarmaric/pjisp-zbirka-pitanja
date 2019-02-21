@@ -1,9 +1,9 @@
 Uvod
 ====
 
-Ova zbirka rešenih zadataka namenjena je studentima Fakulteta tehničkih nauka
+Ova zbirka ispitnih pitanja namenjena je studentima Fakulteta tehničkih nauka
 Univerziteta u Novom Sadu, kao pomoćni udžbenik za predmet "Programski jezici i
-strukture podataka". Svi primeri rešenja napisani su u programskom jeziku C,
+strukture podataka". Svi primeri koda napisani su u programskom jeziku C,
 čije poznavanje je potrebno za upotrebu zbirke.
 
 Zbirka se može kupiti u papirnom obliku ili besplatno čitati na web sajtu
