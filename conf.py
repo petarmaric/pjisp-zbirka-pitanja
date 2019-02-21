@@ -84,7 +84,7 @@ exclude_patterns = [
 ]
 
 # The default programming language to highlight source code in.
-highlight_language = 'guess'
+highlight_language = 'c'
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'trac'
