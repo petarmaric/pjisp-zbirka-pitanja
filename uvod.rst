@@ -7,9 +7,9 @@ strukture podataka". Svi primeri koda napisani su u programskom jeziku C,
 čije poznavanje je potrebno za upotrebu zbirke.
 
 Zbirka se može kupiti u papirnom obliku ili besplatno čitati na web sajtu
-http://pjisp.petarmaric.com/zbirka-zadataka.
+http://pjisp.petarmaric.com/zbirka-pitanja.
 
 Ovo delo je u celosti bazirano na tehnologijama otvorenog koda, kao što su
 Python, Sphinx, Docker i Fabric. Izvorni kod ovog dela dostupan je na
-https://bitbucket.org/petar/pjisp-zbirka-zadataka/ pod licencom otvorenog koda,
+https://bitbucket.org/petar/pjisp-zbirka-pitanja/ pod licencom otvorenog koda,
 pogledati glavu :doc:`LICENSE` za detaljne informacije o uslovima licence.
