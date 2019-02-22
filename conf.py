@@ -164,14 +164,6 @@ latex_elements = {
         % Converts all colors to the 'gray' color model
         \selectcolormodel{gray}
     """,
-
-    'printindex': r"""
-        \renewcommand{\indexname}{Indeks zadataka po kategorijama}
-        \cleardoublepage
-        \phantomsection
-        \addcontentsline{toc}{chapter}{\indexname}
-        \printindex
-    """,
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
