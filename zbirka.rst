@@ -6,5 +6,5 @@ PJISP zbirka pitanja
    :glob:
 
    uvod
-   all-questions/**
+   questions/**
    LICENSE
