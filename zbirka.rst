@@ -6,5 +6,5 @@ PJISP zbirka pitanja
    :glob:
 
    uvod
-   zadaci/sa-kolokvijuma/*
+   all-questions/**
    LICENSE
