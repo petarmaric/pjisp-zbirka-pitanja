@@ -24,7 +24,7 @@ Kako se može deklarisati niz celobrojnih vrednosti sa jednim članom?
 - ``int niz[1];``
 - ``int niz(1);``
 - ``int niz{1};``
-- Nije moguće deklarisati niz sa jednim članom
+- nije moguće deklarisati niz sa jednim članom
 
 ----
 
@@ -120,7 +120,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
 - -2
 - 0
 - 1
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 
 ----
 
@@ -142,7 +142,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
 - 0
 - 1
 - 3
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 
 ----
 
@@ -170,7 +170,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
 - 10
 - 1
 - 15
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 
 ----
 
@@ -198,7 +198,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
 - 5
 - 1
 - 15
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 
 ----
 
@@ -237,7 +237,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
         return 0;
     }
 
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 - 0
 - 1
 - 10
@@ -258,7 +258,7 @@ Odabrati ispravan ``SNIPPET`` za ispis svakog 3. člana niza::
         return 0;
     }
 
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 - 0
 - 1
 - 5
@@ -293,7 +293,7 @@ Kako se može uneti prvih 8 vrednosti niza realnih brojeva ``a``?
         return 0;
     }
 
-- Ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
+- ne možemo znati koji broj će biti ispisan (vrednost zatečena u memoriji)
 - 5
 - 10
 - 15
