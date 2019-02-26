@@ -10,7 +10,6 @@ SPHINX_BUILD_DIR = '_build'
 
 SPHINX_BUILDERS = [
     'html',
-    'singlehtml',
 ]
 
 
