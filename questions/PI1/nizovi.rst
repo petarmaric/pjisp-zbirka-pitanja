@@ -298,3 +298,49 @@ Kako se može uneti prvih 8 vrednosti niza realnih brojeva ``a``?
 - 10
 - 15
 - 25
+
+----
+
+Šta će biti ispisano na standardni izlaz kao rezultat izvršavanja sledećeg koda::
+
+    #include <stdio.h>
+
+    int main() {
+        int i = 0;
+        int j = 2;
+        int a[7] = {0, 1, 2, 3, 2, 1, 0};
+
+        while(a[i] != a[j]) i++; j++; printf("%d %d ", a[i], a[j]);
+
+        return 0;
+    }
+
+- ``2 3``
+- ``0``
+- ``1``
+- ``2``
+- ``0 2 1 3``
+- program će prilikom izvršavanja ući u beskonačnu petlju
+
+----
+
+Šta će biti ispisano na standardni izlaz kao rezultat izvršavanja sledećeg koda::
+
+    #include <stdio.h>
+
+    int main() {
+        int i = 0;
+        int j = 2;
+        int a[7] = {0, 1, 2, 3, 2, 1, 0};
+
+        while(a[i] = a[j]) i++; j++; printf("%d %d ", a[i], a[j]);
+
+        return 0;
+    }
+
+- program će prilikom izvršavanja ući u beskonačnu petlju
+- ``2 1``
+- ``2 3``
+- ``0 3``
+- ``0 1``
+- ``1 2``
