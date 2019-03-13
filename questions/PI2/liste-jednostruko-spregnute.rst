@@ -91,7 +91,7 @@ Koju operaciju nad jednostruko spregnutom listom karaktera implementira sledeći
         if(t == 0)
             return 1;
 
-        return foobar(node->left, t-1) + foobar(node->right, t-1);
+        return f(node->left, t-1) + f(node->right, t-1);
     }
 
 - ovo nije operacija nad listom
